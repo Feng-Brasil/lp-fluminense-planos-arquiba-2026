@@ -4,13 +4,26 @@ export default function Home() {
       {/* HEADER / NAVIGATION */}
       <nav className="border-b border-[#393939] bg-[#171717] sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-[#185347] rounded-full flex items-center justify-center font-bold text-xl border border-[#68121f]">FFC</div>
-            <span className="text-xl font-bold tracking-tighter uppercase">Sócio Futebol</span>
+          <div className="flex items-center gap-6">
+            <a href="/" className="flex items-center gap-2 text-sm font-bold hover:text-[#185347] transition-colors">
+              <span>←</span> VOLTAR
+            </a>
+            <div className="flex items-center gap-2">
+              <div className="w-10 h-10 bg-[#185347] rounded-full flex items-center justify-center font-bold text-xl border border-[#68121f]">FFC</div>
+              <span className="text-xl font-bold tracking-tighter uppercase">Sócio Futebol</span>
+            </div>
           </div>
-          <a href="#planos" className="bg-[#ffffff] text-[#171717] px-6 py-2 rounded-full font-bold text-sm hover:bg-[#185347] hover:text-white transition-all duration-300">
-            ASSINE JÁ
-          </a>
+          
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3 font-bold text-sm tracking-widest">
+              <a href="#" className="hover:text-[#185347] transition-colors">LOGIN</a>
+              <span className="text-[#393939]">|</span>
+              <a href="#" className="hover:text-[#185347] transition-colors">SEJA SÓCIO</a>
+            </div>
+            <a href="#planos" className="bg-[#ffffff] text-[#171717] px-6 py-2 rounded-full font-bold text-sm hover:bg-[#185347] hover:text-white transition-all duration-300">
+              ASSINE JÁ
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -18,15 +31,18 @@ export default function Home() {
       <section className="relative overflow-hidden pt-20 pb-32">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#185347]/20 to-transparent pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="max-w-4xl">
-            <span className="text-[#185347] font-bold tracking-widest uppercase mb-4 block italic">Temporada 2024/2025</span>
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="bg-[#185347] inline-block px-4 py-1 mb-6 rounded-sm">
+              <span className="text-white font-bold tracking-[0.2em] uppercase text-sm">SOMOS 75.432 SÓCIOS DO FLU</span>
+            </div>
+            <span className="text-[#185347] font-bold tracking-widest uppercase mb-4 block italic">TEMPORADA 2026 COMEÇOU!</span>
             <h1 className="text-5xl md:text-7xl font-black uppercase leading-none mb-6 italic">
-              SOMOS <span className="text-[#68121f]">MARACANÃ!</span> Garanta já o seu lugar na arquibancada com os Planos Arquiba e empurre o Fluminense rumo às glórias de Libertadores, Brasileirão, Carioca e Copa do Brasil!
+              PLANOS <span className="text-[#68121f]">ARQUIBA</span>
             </h1>
-            <p className="text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
-              A temporada começa agora — e a torcida tricolor jogando junto faz toda a diferença! Seja parte dessa história dentro do estádio.
+            <p className="text-xl text-gray-300 mb-10 mx-auto leading-relaxed uppercase font-bold">
+              SOMOS MARACANÃ, A TEMPORADA COMEÇA AGORA E A TORCIDA TRICOLOR JOGANDO JUNTO FAZ TODA DIFERENÇA! SEJA PARTE DO INÍCIO DESSES NOVOS DESAFIOS DE DENTRO DO MARACA!
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#planos" className="bg-[#ffffff] text-[#171717] px-8 py-5 rounded-sm font-black text-xl text-center hover:bg-[#68121f] hover:text-white transition-all duration-500 uppercase">
                 TORNE-SE SÓCIO ARQUIBA AGORA!
               </a>
