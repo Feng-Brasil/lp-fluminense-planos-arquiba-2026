@@ -39,7 +39,7 @@ export default function Home() {
       <section className="relative bg-[#F8F9FA] py-16 border-b border-gray-200">
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="flex flex-col items-center text-center">
-            {/* CONTADOR ADICIONADO */}
+            {/* CONTADOR CENTRALIZADO */}
             <div className="bg-[#006437] text-white px-6 py-2 rounded-full text-[14px] font-black uppercase tracking-widest mb-6 shadow-md">
               SOMOS 65.432 SÓCIOS DO FLU
             </div>
