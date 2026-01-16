@@ -19,7 +19,7 @@ export default function Home() {
 
           {/* CONTADOR DE SÓCIOS (SUBSTITUINDO NAV LINKS) */}
           <div className="hidden lg:flex items-center">
-            <div className="bg-[#006437] text-white px-6 py-2 rounded-full text-[14px] font-black uppercase tracking-widest shadow-sm">
+            <div className="bg-[#006437] text-white px-8 py-2.5 rounded-full text-[16px] font-black uppercase tracking-[0.15em] shadow-md border-2 border-[#004d2a]">
               SOMOS 65.432 SÓCIOS DO FLU
             </div>
           </div>
@@ -35,13 +35,13 @@ export default function Home() {
       </nav>
 
       {/* HERO SECTION */}
-      <section className="relative bg-[#F8F9FA] py-24 border-b border-gray-200">
+      <section className="relative bg-[#F8F9FA] py-32 border-b border-gray-200">
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="flex flex-col items-center text-center">
-            <h1 className="text-[50px] md:text-[82px] font-black text-[#212529] leading-[0.9] mb-6 uppercase italic tracking-tighter">
+            <h1 className="text-[60px] md:text-[104px] font-black text-[#212529] leading-[0.85] mb-8 uppercase italic tracking-tighter">
               2026 <span className="text-[#9C2A36]">COMEÇOU!</span>
             </h1>
-            <p className="text-[20px] md:text-[24px] text-[#6C757D] max-w-3xl font-medium leading-relaxed">
+            <p className="text-[24px] md:text-[32px] text-[#6C757D] max-w-4xl font-semibold leading-tight">
               A temporada está só no início e com torcida tricolor jogando junto somos muito fortes! Seja parte da história desse ano dentro do Maraca.
             </p>
           </div>
