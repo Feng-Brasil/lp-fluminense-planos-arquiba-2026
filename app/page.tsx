@@ -1,12 +1,8 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#171717] text-[#ffffff] selection:bg-[#68121f] selection:text-white" style={{ fontFamily: 'Oswald, sans-serif' }}>
-      {/* TRICOLOR TOP BAR */}
-      <div className="w-full h-12 flex relative overflow-hidden">
-        <div className="flex-1 bg-[#68121f]"></div>
-        <div className="w-6 bg-[#ffffff] skew-x-[-20deg] -mx-2 z-10"></div>
-        <div className="flex-1 bg-[#185347]"></div>
-      </div>
+      {/* TOP BAR - REMOVED TRICOLOR STRIPE, NOW SOLID DARK */}
+      <div className="w-full h-2 bg-[#121212] border-b border-[#393939]"></div>
 
       {/* HEADER / NAVIGATION */}
       <nav className="border-b border-[#393939] bg-[#171717] sticky top-0 z-50">
