@@ -172,7 +172,7 @@ export default function Home() {
               <div className="flex gap-4">
                 <div className="text-3xl font-black text-[#68121f]">50%</div>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <strong className="text-white uppercase">Desconto em Ingressos:</strong> Incluindo convidados em seu plano, você pode comprar ingressos extras para eles com 50% de desconto, na mesma prioridade do titular!
+                  Incluindo convidados em seu plano, você pode comprar ingressos extras para eles com 50% de desconto, na mesma prioridade do titular!
                 </p>
               </div>
               
