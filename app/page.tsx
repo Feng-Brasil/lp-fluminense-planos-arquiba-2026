@@ -1,28 +1,17 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#171717] text-[#ffffff] selection:bg-[#68121f] selection:text-white" style={{ fontFamily: 'Oswald, sans-serif' }}>
-      {/* TRICOLOR TOP BAR WITH INTEGRATED COUNTER */}
+      {/* TRICOLOR TOP BAR */}
       <div className="w-full h-12 flex relative overflow-hidden">
         <div className="flex-1 bg-[#68121f]"></div>
         <div className="w-6 bg-[#ffffff] skew-x-[-20deg] -mx-2 z-10"></div>
         <div className="flex-1 bg-[#185347]"></div>
-        
-        {/* CONTADOR DE SÓCIOS POSICIONADO NA BARRA - ESPAÇAMENTO AUMENTADO */}
-        <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-          <div className="flex items-center gap-8 bg-[#171717]/60 px-10 py-1.5 backdrop-blur-md border-x border-white/20 shadow-2xl">
-            <span className="text-white font-black tracking-normal uppercase text-xl">
-              <span className="text-[#ffffff] mr-2">65.432</span> SÓCIOS
-            </span>
-            <div className="h-5 w-[1px] bg-white/40"></div>
-            <span className="text-[11px] tracking-[0.3em] opacity-100 font-bold uppercase text-white/90">Somos Fluminense</span>
-          </div>
-        </div>
       </div>
 
       {/* HEADER / NAVIGATION */}
       <nav className="border-b border-[#393939] bg-[#171717] sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-8">
             <a href="/" className="flex items-center gap-2 text-sm font-bold hover:text-[#185347] transition-colors">
               <span>←</span> VOLTAR
             </a>
@@ -31,12 +20,22 @@ export default function Home() {
               <span className="text-xl font-bold tracking-tighter uppercase">Sócio Futebol</span>
             </div>
           </div>
+
+          {/* CONTADOR DE SÓCIOS ALINHADO NO HEADER */}
+          <div className="hidden lg:flex items-center gap-6 bg-[#1f1f1f] px-6 py-2 border border-white/10">
+            <div className="flex flex-col leading-none">
+              <span className="text-[#ffffff] font-black text-xl">65.432</span>
+              <span className="text-[10px] tracking-[0.2em] uppercase opacity-60">Sócios Ativos</span>
+            </div>
+            <div className="h-8 w-[1px] bg-white/20"></div>
+            <span className="text-[11px] tracking-[0.3em] font-bold uppercase text-[#185347]">Somos Fluminense</span>
+          </div>
           
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-3 font-bold text-sm tracking-widest">
+            <div className="flex items-center gap-6 font-bold text-sm tracking-widest">
               <a href="#" className="hover:text-[#185347] transition-colors uppercase">LOGIN</a>
               <span className="text-[#393939]">|</span>
-              <a href="#" className="hover:text-[#185347] transition-colors uppercase">SEJA SÓCIO</a>
+              <a href="#" className="bg-[#68121f] px-4 py-2 hover:bg-[#8a1829] transition-colors uppercase">SEJA SÓCIO</a>
             </div>
           </div>
         </div>
