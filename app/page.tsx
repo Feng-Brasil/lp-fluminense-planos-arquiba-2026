@@ -34,211 +34,166 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* HERO SECTION */}
-      <section className="relative bg-[#F8F9FA] py-32 border-b border-gray-200">
-        <div className="max-w-[1200px] mx-auto px-4">
-          <div className="flex flex-col items-center text-center">
-            <h1 className="text-[60px] md:text-[104px] font-black text-[#212529] leading-[0.85] mb-8 uppercase italic tracking-tighter">
+      {/* HERO & PLANOS INTEGRATED SECTION */}
+      <section className="relative bg-[#F8F9FA] pt-20 pb-24 border-b border-gray-200">
+        <div className="max-w-[1400px] mx-auto px-4">
+          {/* HERO CONTENT */}
+          <div className="flex flex-col items-center text-center mb-16">
+            <h1 className="text-[50px] md:text-[90px] font-black text-[#212529] leading-[0.85] mb-6 uppercase italic tracking-tighter">
               2026 <span className="text-[#9C2A36]">COMEÇOU!</span>
             </h1>
-            <p className="text-[24px] md:text-[32px] text-[#6C757D] max-w-4xl font-semibold leading-tight mb-12">
-              A temporada está só no início e com torcida tricolor jogando junto somos muito fortes! Seja parte da história desse ano dentro do Maraca.
+            <p className="text-[20px] md:text-[24px] text-[#6C757D] max-w-3xl font-semibold leading-tight mb-4">
+              A temporada está só no início. Escolha seu plano e jogue junto com o Fluzão!
             </p>
-            
-            {/* CONHEÇA OS PLANOS ARQUIBA */}
-            <a href="#planos" className="flex flex-col items-center gap-4 animate-bounce group cursor-pointer decoration-transparent">
-              <span className="text-[14px] font-black text-[#006437] uppercase tracking-[0.2em] group-hover:text-[#9C2A36] transition-colors">Conheça os planos Arquiba</span>
-              <svg className="w-6 h-6 text-[#006437] group-hover:text-[#9C2A36] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* PLANOS GRID */}
-      <section id="planos" className="bg-[#FFFFFF] py-24">
-        <div className="max-w-[1200px] mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-[40px] font-black text-[#212529] uppercase italic">Planos <span className="text-[#006437]">Arquiba</span></h2>
-            <p className="text-[#6C757D] font-medium">Escolha a melhor opção para você apoiar o Fluzão</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* COMPACT PLANOS GRID */}
+          <div id="planos" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-stretch">
             
             {/* PLANO ARQUIBA 100% */}
             <div className="bg-[#FFFFFF] border border-[#DEE2E6] rounded-xl overflow-hidden flex flex-col shadow-sm hover:border-[#006437] transition-all group">
-              <div className="p-8 bg-[#F8F9FA] border-b border-[#DEE2E6]">
-                <h3 className="text-[24px] font-black text-[#212529] uppercase italic mb-1">Arquiba 100%</h3>
+              <div className="p-5 bg-[#F8F9FA] border-b border-[#DEE2E6]">
+                <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Arquiba 100%</h3>
                 <div className="flex items-baseline gap-1">
-                  <span className="text-[14px] font-bold text-[#6C757D]">R$</span>
-                  <span className="text-[42px] font-black text-[#006437]">85</span>
-                  <span className="text-[18px] font-bold text-[#6C757D]">,00</span>
-                  <span className="text-[14px] font-medium text-[#6C757D] ml-1">/mês</span>
+                  <span className="text-[12px] font-bold text-[#6C757D]">R$</span>
+                  <span className="text-[32px] font-black text-[#006437]">85</span>
+                  <span className="text-[12px] font-medium text-[#6C757D]">/mês</span>
                 </div>
               </div>
-              <div className="p-8 flex-grow">
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-[15px] text-[#495057]">
-                    <span className="text-[#006437] mt-1">●</span>
-                    <span><strong>100% de desconto</strong> em ingressos de arquibancada</span>
+              <div className="p-5 flex-grow">
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
+                    <span className="text-[#006437] font-bold">✓</span>
+                    <span><strong>100% desc.</strong> em arquibancada</span>
                   </li>
-                  <li className="flex items-start gap-3 text-[15px] text-[#495057]">
-                    <span className="text-[#006437] mt-1">●</span>
-                    <span><strong>Prioridade 1</strong> na compra de ingressos</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[15px] text-[#495057]">
-                    <span className="text-[#006437] mt-1">●</span>
-                    <span>Direito a voto (conforme estatuto)</span>
+                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
+                    <span className="text-[#006437] font-bold">✓</span>
+                    <span><strong>Prioridade 1</strong></span>
                   </li>
                 </ul>
               </div>
-              <div className="p-8 pt-0">
-                <button className="w-full bg-[#006437] text-white py-4 rounded-lg font-bold uppercase text-[14px] tracking-wider hover:bg-[#004d2a] transition-colors">
-                  Quero este plano
+              <div className="p-5 pt-0">
+                <button className="w-full bg-[#006437] text-white py-3 rounded-lg font-bold uppercase text-[12px] hover:bg-[#004d2a] transition-colors">
+                  Assinar
                 </button>
               </div>
             </div>
 
             {/* PLANO ARQUIBA 75% */}
             <div className="bg-[#FFFFFF] border border-[#DEE2E6] rounded-xl overflow-hidden flex flex-col shadow-sm hover:border-[#006437] transition-all group">
-              <div className="p-8 bg-[#F8F9FA] border-b border-[#DEE2E6]">
-                <h3 className="text-[24px] font-black text-[#212529] uppercase italic mb-1">Arquiba 75%</h3>
+              <div className="p-5 bg-[#F8F9FA] border-b border-[#DEE2E6]">
+                <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Arquiba 75%</h3>
                 <div className="flex items-baseline gap-1">
-                  <span className="text-[14px] font-bold text-[#6C757D]">R$</span>
-                  <span className="text-[42px] font-black text-[#006437]">60</span>
-                  <span className="text-[18px] font-bold text-[#6C757D]">,00</span>
-                  <span className="text-[14px] font-medium text-[#6C757D] ml-1">/mês</span>
+                  <span className="text-[12px] font-bold text-[#6C757D]">R$</span>
+                  <span className="text-[32px] font-black text-[#006437]">60</span>
+                  <span className="text-[12px] font-medium text-[#6C757D]">/mês</span>
                 </div>
               </div>
-              <div className="p-8 flex-grow">
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-[15px] text-[#495057]">
-                    <span className="text-[#006437] mt-1">●</span>
-                    <span><strong>75% de desconto</strong> em arquibancada</span>
+              <div className="p-5 flex-grow">
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
+                    <span className="text-[#006437] font-bold">✓</span>
+                    <span><strong>75% desc.</strong> em arquibancada</span>
                   </li>
-                  <li className="flex items-start gap-3 text-[15px] text-[#495057]">
-                    <span className="text-[#006437] mt-1">●</span>
-                    <span><strong>Prioridade 2</strong> na compra de ingressos</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[15px] text-[#495057]">
-                    <span className="text-[#006437] mt-1">●</span>
-                    <span>Rede de parceiros e descontos</span>
+                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
+                    <span className="text-[#006437] font-bold">✓</span>
+                    <span><strong>Prioridade 2</strong></span>
                   </li>
                 </ul>
               </div>
-              <div className="p-8 pt-0">
-                <button className="w-full bg-[#006437] text-white py-4 rounded-lg font-bold uppercase text-[14px] tracking-wider hover:bg-[#004d2a] transition-colors">
-                  Quero este plano
+              <div className="p-5 pt-0">
+                <button className="w-full bg-[#006437] text-white py-3 rounded-lg font-bold uppercase text-[12px] hover:bg-[#004d2a] transition-colors">
+                  Assinar
                 </button>
               </div>
             </div>
 
             {/* PLANO RAIZ */}
             <div className="bg-[#FFFFFF] border border-[#DEE2E6] rounded-xl overflow-hidden flex flex-col shadow-sm hover:border-[#006437] transition-all group">
-              <div className="p-8 bg-[#F8F9FA] border-b border-[#DEE2E6]">
-                <h3 className="text-[24px] font-black text-[#212529] uppercase italic mb-1">Raiz</h3>
+              <div className="p-5 bg-[#F8F9FA] border-b border-[#DEE2E6]">
+                <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Raiz</h3>
                 <div className="flex items-baseline gap-1">
-                  <span className="text-[14px] font-bold text-[#6C757D]">R$</span>
-                  <span className="text-[42px] font-black text-[#006437]">35</span>
-                  <span className="text-[18px] font-bold text-[#6C757D]">,00</span>
-                  <span className="text-[14px] font-medium text-[#6C757D] ml-1">/mês</span>
+                  <span className="text-[12px] font-bold text-[#6C757D]">R$</span>
+                  <span className="text-[32px] font-black text-[#006437]">35</span>
+                  <span className="text-[12px] font-medium text-[#6C757D]">/mês</span>
                 </div>
               </div>
-              <div className="p-8 flex-grow">
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-[15px] text-[#495057]">
-                    <span className="text-[#006437] mt-1">●</span>
+              <div className="p-5 flex-grow">
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
+                    <span className="text-[#006437] font-bold">✓</span>
                     <span>Acesso à compra de ingressos</span>
                   </li>
-                  <li className="flex items-start gap-3 text-[15px] text-[#495057]">
-                    <span className="text-[#006437] mt-1">●</span>
-                    <span><strong>Prioridade 3</strong> na compra</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[15px] text-[#495057]">
-                    <span className="text-[#006437] mt-1">●</span>
-                    <span>Ideal para quem mora fora do RJ</span>
+                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
+                    <span className="text-[#006437] font-bold">✓</span>
+                    <span><strong>Prioridade 3</strong></span>
                   </li>
                 </ul>
               </div>
-              <div className="p-8 pt-0">
-                <button className="w-full bg-[#006437] text-white py-4 rounded-lg font-bold uppercase text-[14px] tracking-wider hover:bg-[#004d2a] transition-colors">
-                  Quero este plano
+              <div className="p-5 pt-0">
+                <button className="w-full bg-[#006437] text-white py-3 rounded-lg font-bold uppercase text-[12px] hover:bg-[#004d2a] transition-colors">
+                  Assinar
                 </button>
               </div>
             </div>
 
             {/* PLANO MARACA+ (DESTAQUE) */}
-            <div className="bg-[#FFFFFF] border-2 border-[#9C2A36] rounded-xl overflow-hidden flex flex-col shadow-xl relative transform lg:scale-105 z-10">
-              <div className="bg-[#9C2A36] text-white text-center py-2 text-[12px] font-bold uppercase tracking-widest">
-                O Plano Mais Completo
+            <div className="bg-[#FFFFFF] border-2 border-[#9C2A36] rounded-xl overflow-hidden flex flex-col shadow-xl relative z-10 transform lg:scale-105">
+              <div className="bg-[#9C2A36] text-white text-center py-1 text-[10px] font-bold uppercase tracking-widest">
+                Mais Completo
               </div>
-              <div className="p-8 bg-[#FFF5F6] border-b border-[#DEE2E6]">
-                <h3 className="text-[24px] font-black text-[#212529] uppercase italic mb-1">Maraca +</h3>
+              <div className="p-5 bg-[#FFF5F6] border-b border-[#DEE2E6]">
+                <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Maraca +</h3>
                 <div className="flex items-baseline gap-1">
-                  <span className="text-[14px] font-bold text-[#6C757D]">R$</span>
-                  <span className="text-[42px] font-black text-[#9C2A36]">145</span>
-                  <span className="text-[18px] font-bold text-[#6C757D]">,00</span>
-                  <span className="text-[14px] font-medium text-[#6C757D] ml-1">/mês</span>
+                  <span className="text-[12px] font-bold text-[#6C757D]">R$</span>
+                  <span className="text-[32px] font-black text-[#9C2A36]">145</span>
+                  <span className="text-[12px] font-medium text-[#6C757D]">/mês</span>
                 </div>
               </div>
-              <div className="p-8 flex-grow">
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-[15px] text-[#212529] font-semibold">
-                    <span className="text-[#9C2A36] mt-1">●</span>
-                    <span>Check-in em qualquer setor do estádio</span>
+              <div className="p-5 flex-grow">
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2 text-[13px] text-[#212529] font-bold">
+                    <span className="text-[#9C2A36]">★</span>
+                    <span>Check-in em qualquer setor</span>
                   </li>
-                  <li className="flex items-start gap-3 text-[15px] text-[#212529] font-semibold">
-                    <span className="text-[#9C2A36] mt-1">●</span>
-                    <span>Prioridade Máxima de compra</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[15px] text-[#212529] font-semibold">
-                    <span className="text-[#9C2A36] mt-1">●</span>
-                    <span>1 convidado com 50% de desconto</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[15px] text-[#212529] font-semibold">
-                    <span className="text-[#9C2A36] mt-1">●</span>
-                    <span>Kit Sócio exclusivo</span>
+                  <li className="flex items-start gap-2 text-[13px] text-[#212529] font-bold">
+                    <span className="text-[#9C2A36]">★</span>
+                    <span>Prioridade Máxima</span>
                   </li>
                 </ul>
               </div>
-              <div className="p-8 pt-0">
-                <button className="w-full bg-[#9C2A36] text-white py-4 rounded-lg font-bold uppercase text-[14px] tracking-wider hover:bg-[#7a212a] transition-colors">
-                  Assinar Agora
+              <div className="p-5 pt-0">
+                <button className="w-full bg-[#9C2A36] text-white py-3 rounded-lg font-bold uppercase text-[12px] hover:bg-[#7a212a] transition-colors">
+                  Assinar
                 </button>
               </div>
             </div>
 
             {/* PLANO SUB-12 */}
             <div className="bg-[#FFFFFF] border border-[#DEE2E6] rounded-xl overflow-hidden flex flex-col shadow-sm hover:border-[#9C2A36] transition-all group">
-              <div className="p-8 bg-[#F8F9FA] border-b border-[#DEE2E6]">
-                <h3 className="text-[24px] font-black text-[#212529] uppercase italic mb-1">Sub-12</h3>
+              <div className="p-5 bg-[#F8F9FA] border-b border-[#DEE2E6]">
+                <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Sub-12</h3>
                 <div className="flex items-baseline gap-1">
-                  <span className="text-[14px] font-bold text-[#6C757D]">R$</span>
-                  <span className="text-[42px] font-black text-[#9C2A36]">15</span>
-                  <span className="text-[18px] font-bold text-[#6C757D]">,00</span>
-                  <span className="text-[14px] font-medium text-[#6C757D] ml-1">/mês</span>
+                  <span className="text-[12px] font-bold text-[#6C757D]">R$</span>
+                  <span className="text-[32px] font-black text-[#9C2A36]">15</span>
+                  <span className="text-[12px] font-medium text-[#6C757D]">/mês</span>
                 </div>
               </div>
-              <div className="p-8 flex-grow">
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-[15px] text-[#495057]">
-                    <span className="text-[#9C2A36] mt-1">●</span>
-                    <span>Para pequenos tricolores até 12 anos</span>
+              <div className="p-5 flex-grow">
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
+                    <span className="text-[#9C2A36] font-bold">✓</span>
+                    <span>Até 12 anos</span>
                   </li>
-                  <li className="flex items-start gap-3 text-[15px] text-[#495057]">
-                    <span className="text-[#9C2A36] mt-1">●</span>
-                    <span><strong>Check-in gratuito</strong> acompanhado</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[15px] text-[#495057]">
-                    <span className="text-[#9C2A36] mt-1">●</span>
-                    <span>Kit mascote exclusivo</span>
+                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
+                    <span className="text-[#9C2A36] font-bold">✓</span>
+                    <span>Check-in gratuito</span>
                   </li>
                 </ul>
               </div>
-              <div className="p-8 pt-0">
-                <button className="w-full bg-[#9C2A36] text-white py-4 rounded-lg font-bold uppercase text-[14px] tracking-wider hover:bg-[#7a212a] transition-colors">
-                  Quero este plano
+              <div className="p-5 pt-0">
+                <button className="w-full bg-[#9C2A36] text-white py-3 rounded-lg font-bold uppercase text-[12px] hover:bg-[#7a212a] transition-colors">
+                  Assinar
                 </button>
               </div>
             </div>
@@ -248,7 +203,7 @@ export default function Home() {
       </section>
 
       {/* INFO SECTION */}
-      <section className="bg-[#F8F9FA] py-20 border-t border-gray-200">
+      <section className="bg-[#FFFFFF] py-20">
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -257,7 +212,7 @@ export default function Home() {
               </h2>
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#F8F9FA] rounded-full flex items-center justify-center shadow-sm flex-shrink-0">
                     <span className="text-[#006437] font-bold">01</span>
                   </div>
                   <div>
@@ -266,7 +221,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#F8F9FA] rounded-full flex items-center justify-center shadow-sm flex-shrink-0">
                     <span className="text-[#006437] font-bold">02</span>
                   </div>
                   <div>
@@ -275,7 +230,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#F8F9FA] rounded-full flex items-center justify-center shadow-sm flex-shrink-0">
                     <span className="text-[#006437] font-bold">03</span>
                   </div>
                   <div>
