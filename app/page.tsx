@@ -7,14 +7,14 @@ export default function Home() {
         <div className="w-6 bg-[#ffffff] skew-x-[-20deg] -mx-2 z-10"></div>
         <div className="flex-1 bg-[#185347]"></div>
         
-        {/* CONTADOR DE SÓCIOS POSICIONADO NA BARRA */}
+        {/* CONTADOR DE SÓCIOS POSICIONADO NA BARRA - ESPAÇAMENTO AUMENTADO */}
         <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-          <div className="flex items-center gap-3 bg-[#171717]/40 px-6 py-1 backdrop-blur-sm border-x border-white/10">
-            <span className="text-white font-black tracking-tighter uppercase text-xl">
-              <span className="text-[#ffffff]">65.432</span> SÓCIOS
+          <div className="flex items-center gap-8 bg-[#171717]/60 px-10 py-1.5 backdrop-blur-md border-x border-white/20 shadow-2xl">
+            <span className="text-white font-black tracking-normal uppercase text-xl">
+              <span className="text-[#ffffff] mr-2">65.432</span> SÓCIOS
             </span>
-            <div className="h-4 w-[1px] bg-white/30"></div>
-            <span className="text-[10px] tracking-[0.2em] opacity-90 font-bold uppercase">Somos Fluminense</span>
+            <div className="h-5 w-[1px] bg-white/40"></div>
+            <span className="text-[11px] tracking-[0.3em] opacity-100 font-bold uppercase text-white/90">Somos Fluminense</span>
           </div>
         </div>
       </div>
