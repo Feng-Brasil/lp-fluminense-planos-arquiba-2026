@@ -6,7 +6,8 @@ export default function Home() {
 
       {/* HEADER / NAVIGATION */}
       <nav className="border-b border-[#393939] bg-[#171717] sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 grid grid-cols-3 items-center">
+          
           {/* LADO ESQUERDO: VOLTAR E LOGO */}
           <div className="flex items-center gap-4 md:gap-8 shrink-0">
             <a href="/" className="flex items-center gap-2 text-sm font-bold hover:text-[#185347] transition-colors">
@@ -18,23 +19,23 @@ export default function Home() {
             </div>
           </div>
 
-          {/* LADO DIREITO: CONTADOR + LOGIN + SEJA SÓCIO */}
-          <div className="flex items-center gap-4 md:gap-8">
-            {/* CONTADOR DE SÓCIOS INTEGRADO */}
+          {/* CENTRO: CONTADOR DE SÓCIOS CENTRALIZADO */}
+          <div className="flex justify-center">
             <div className="hidden md:flex items-center gap-4 bg-[#1f1f1f] px-4 py-2 border border-white/10">
-              <div className="flex flex-col leading-none">
+              <div className="flex flex-col leading-none text-center">
                 <span className="text-[#ffffff] font-black text-lg">65.432</span>
                 <span className="text-[9px] tracking-[0.1em] uppercase opacity-60">Sócios Ativos</span>
               </div>
-              <div className="h-6 w-[1px] bg-white/20"></div>
+              <div className="h-6 w-[1px] bg-white/20 hidden lg:block"></div>
               <span className="text-[10px] tracking-[0.2em] font-bold uppercase text-[#185347] hidden lg:block">Somos Fluminense</span>
             </div>
-            
-            <div className="flex items-center gap-4 md:gap-6 font-bold text-sm tracking-widest">
-              <a href="#" className="hover:text-[#185347] transition-colors uppercase">LOGIN</a>
-              <span className="text-[#393939] hidden sm:inline">|</span>
-              <a href="#" className="bg-[#68121f] px-4 py-2 hover:bg-[#8a1829] transition-colors uppercase whitespace-nowrap">SEJA SÓCIO</a>
-            </div>
+          </div>
+          
+          {/* LADO DIREITO: LOGIN + SEJA SÓCIO */}
+          <div className="flex items-center justify-end gap-4 md:gap-6 font-bold text-sm tracking-widest">
+            <a href="#" className="hover:text-[#185347] transition-colors uppercase">LOGIN</a>
+            <span className="text-[#393939] hidden sm:inline">|</span>
+            <a href="#" className="bg-[#68121f] px-4 py-2 hover:bg-[#8a1829] transition-colors uppercase whitespace-nowrap">SEJA SÓCIO</a>
           </div>
         </div>
       </nav>
