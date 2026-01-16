@@ -1,11 +1,22 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#171717] text-[#ffffff] selection:bg-[#68121f] selection:text-white" style={{ fontFamily: 'Oswald, sans-serif' }}>
-      {/* TRICOLOR TOP BAR */}
-      <div className="w-full h-3 flex">
+      {/* TRICOLOR TOP BAR WITH INTEGRATED COUNTER */}
+      <div className="w-full h-12 flex relative overflow-hidden">
         <div className="flex-1 bg-[#68121f]"></div>
-        <div className="w-4 bg-[#ffffff]"></div>
+        <div className="w-6 bg-[#ffffff] skew-x-[-20deg] -mx-2 z-10"></div>
         <div className="flex-1 bg-[#185347]"></div>
+        
+        {/* CONTADOR DE SÓCIOS POSICIONADO NA BARRA */}
+        <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+          <div className="flex items-center gap-3 bg-[#171717]/40 px-6 py-1 backdrop-blur-sm border-x border-white/10">
+            <span className="text-white font-black tracking-tighter uppercase text-xl">
+              <span className="text-[#ffffff]">65.432</span> SÓCIOS
+            </span>
+            <div className="h-4 w-[1px] bg-white/30"></div>
+            <span className="text-[10px] tracking-[0.2em] opacity-90 font-bold uppercase">Somos Fluminense</span>
+          </div>
+        </div>
       </div>
 
       {/* HEADER / NAVIGATION */}
@@ -19,14 +30,6 @@ export default function Home() {
               <div className="w-10 h-10 bg-[#185347] rounded-full flex items-center justify-center font-bold text-xl border border-[#68121f]">FFC</div>
               <span className="text-xl font-bold tracking-tighter uppercase">Sócio Futebol</span>
             </div>
-          </div>
-          
-          {/* CONTADOR DE SÓCIOS INTEGRADO À BARRA SUPERIOR */}
-          <div className="hidden md:flex flex-col items-center justify-center bg-[#185347] px-6 py-2 border-x border-[#68121f] h-20">
-            <span className="text-white font-black tracking-tighter uppercase text-2xl block leading-none">
-              <span className="text-[#ffffff]">65.432</span> SÓCIOS
-            </span>
-            <span className="text-[10px] text-center block tracking-[0.2em] opacity-80 font-bold">SOMOS FLUMINENSE</span>
           </div>
           
           <div className="flex items-center gap-4">
