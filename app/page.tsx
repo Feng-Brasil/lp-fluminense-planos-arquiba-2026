@@ -25,106 +25,134 @@ export default function Home() {
       </nav>
 
       {/* HERO SECTION + PLANOS (JOINED SCROLL) */}
-      <section className="relative overflow-hidden pt-10 pb-24">
+      <section className="relative overflow-hidden pt-4 pb-24">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#185347]/20 to-transparent pointer-events-none"></div>
+        
+        {/* CONTADOR DE SÓCIOS - AUMENTADO E POSICIONADO MAIS ACIMA */}
+        <div className="w-full flex justify-center mb-12">
+          <div className="bg-[#185347] px-10 py-4 rounded-sm shadow-[0_0_50px_rgba(24,83,71,0.4)] transform hover:scale-105 transition-transform duration-500 border-b-4 border-[#68121f]">
+            <span className="text-white font-black tracking-[0.3em] uppercase text-3xl md:text-5xl block text-center">
+              SOMOS <span className="text-[#ffffff]">65.432</span> SÓCIOS
+            </span>
+            <span className="text-xs text-center block tracking-[0.5em] mt-1 opacity-80">FLUMINENSE FOOTBALL CLUB</span>
+          </div>
+        </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="bg-[#185347] inline-block px-6 py-2 mb-10 rounded-sm shadow-xl transform -translate-y-4">
-              <span className="text-white font-black tracking-[0.25em] uppercase text-xl md:text-2xl">SOMOS XXXX SÓCIOS DO FLU</span>
-            </div>
-            
-            <h1 className="text-5xl md:text-7xl font-black uppercase leading-none mb-6 italic text-center">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h1 className="text-6xl md:text-8xl font-black uppercase leading-none mb-6 italic text-center tracking-tighter">
               2026 <span className="text-[#68121f]">COMEÇOU!</span>
             </h1>
-            <p className="text-xl text-gray-300 mb-10 mx-auto leading-relaxed uppercase font-bold text-center">
-              A temporada está só no início e com torcida tricolor jogando junto somos muito fortes! Seja parte da história desse ano dentro do Maraca.
+            <p className="text-xl md:text-2xl text-gray-300 mb-10 mx-auto leading-tight uppercase font-bold text-center max-w-2xl">
+              A temporada está só no início e com a torcida tricolor jogando junto somos imbatíveis. Escolha seu plano abaixo:
             </p>
           </div>
 
-          {/* PLANOS INTEGRADOS NO PRIMEIRO SCROLL */}
-          <div id="planos" className="grid md:grid-cols-3 lg:grid-cols-5 gap-4 mt-12">
+          {/* PLANOS INTEGRADOS NO PRIMEIRO SCROLL (ESTILO NENSE.COM.BR) */}
+          <div id="planos" className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3 items-stretch">
             {/* Arquiba 100% */}
-            <div className="bg-[#121212] border border-[#393939] p-6 flex flex-col hover:border-[#185347] transition-all">
-              <h3 className="text-2xl font-black mb-2 uppercase">Arquiba 100%</h3>
-              <p className="text-[#185347] font-bold mb-4">O Plano Definitivo</p>
-              <ul className="text-sm space-y-2 mb-8 flex-grow">
-                <li>✓ 100% de desconto no setor Arquibancada</li>
-                <li>✓ Prioridade 1 no Check-in</li>
-                <li>✓ Direito a voto</li>
+            <div className="bg-[#121212] border border-[#393939] p-6 flex flex-col hover:border-[#185347] transition-all group">
+              <div className="mb-6">
+                <h3 className="text-2xl font-black uppercase leading-none group-hover:text-[#185347] transition-colors">Arquiba 100%</h3>
+                <div className="h-1 w-12 bg-[#185347] mt-2"></div>
+              </div>
+              <ul className="text-sm space-y-3 mb-8 flex-grow font-medium text-gray-400">
+                <li className="flex gap-2"><span>✓</span> 100% de desconto no setor Arquibancada</li>
+                <li className="flex gap-2"><span>✓</span> Prioridade 1 no Check-in</li>
+                <li className="flex gap-2"><span>✓</span> Direito a voto</li>
               </ul>
-              <div className="text-2xl font-bold mb-4">R$ 85,00<span className="text-xs">/mês</span></div>
-              <button className="w-full bg-[#185347] py-3 font-bold uppercase text-sm">Assinar</button>
+              <div className="mt-auto">
+                <div className="text-3xl font-black mb-4">R$ 85,00<span className="text-xs font-normal opacity-60">/mês</span></div>
+                <button className="w-full bg-[#185347] py-4 font-black uppercase text-sm tracking-widest hover:bg-[#1e6b5c] transition-colors">Assinar Agora</button>
+              </div>
             </div>
 
             {/* Arquiba 75% */}
-            <div className="bg-[#121212] border border-[#393939] p-6 flex flex-col hover:border-[#185347] transition-all">
-              <h3 className="text-2xl font-black mb-2 uppercase">Arquiba 75%</h3>
-              <p className="text-[#185347] font-bold mb-4">Custo-Benefício</p>
-              <ul className="text-sm space-y-2 mb-8 flex-grow">
-                <li>✓ 75% de desconto no setor Arquibancada</li>
-                <li>✓ Prioridade 2 no Check-in</li>
-                <li>✓ Direito a voto</li>
+            <div className="bg-[#121212] border border-[#393939] p-6 flex flex-col hover:border-[#185347] transition-all group">
+              <div className="mb-6">
+                <h3 className="text-2xl font-black uppercase leading-none group-hover:text-[#185347] transition-colors">Arquiba 75%</h3>
+                <div className="h-1 w-12 bg-[#185347] mt-2"></div>
+              </div>
+              <ul className="text-sm space-y-3 mb-8 flex-grow font-medium text-gray-400">
+                <li className="flex gap-2"><span>✓</span> 75% de desconto no setor Arquibancada</li>
+                <li className="flex gap-2"><span>✓</span> Prioridade 2 no Check-in</li>
+                <li className="flex gap-2"><span>✓</span> Direito a voto</li>
               </ul>
-              <div className="text-2xl font-bold mb-4">R$ 60,00<span className="text-xs">/mês</span></div>
-              <button className="w-full bg-[#185347] py-3 font-bold uppercase text-sm">Assinar</button>
+              <div className="mt-auto">
+                <div className="text-3xl font-black mb-4">R$ 60,00<span className="text-xs font-normal opacity-60">/mês</span></div>
+                <button className="w-full bg-[#185347] py-4 font-black uppercase text-sm tracking-widest hover:bg-[#1e6b5c] transition-colors">Assinar Agora</button>
+              </div>
+            </div>
+
+            {/* Maraca+ (DESTAQUE CENTRAL) */}
+            <div className="bg-[#1a1a1a] border-2 border-[#68121f] p-6 flex flex-col relative z-10 shadow-[0_0_40px_rgba(104,18,31,0.3)] transform lg:scale-110">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#68121f] text-white text-[10px] px-4 py-1 font-black uppercase tracking-widest">Mais Popular</div>
+              <div className="mb-6">
+                <h3 className="text-3xl font-black uppercase leading-none text-[#68121f]">Maraca+</h3>
+                <div className="h-1 w-16 bg-[#68121f] mt-2"></div>
+              </div>
+              <ul className="text-sm space-y-3 mb-8 flex-grow font-bold">
+                <li className="flex gap-2"><span>✓</span> 100% de desconto em TODOS os setores</li>
+                <li className="flex gap-2"><span>✓</span> Prioridade Máxima (0)</li>
+                <li className="flex gap-2"><span>✓</span> Kit Sócio Exclusivo Anual</li>
+                <li className="flex gap-2"><span>✓</span> Experiências VIP</li>
+              </ul>
+              <div className="mt-auto">
+                <div className="text-4xl font-black mb-4">R$ 145,00<span className="text-xs font-normal opacity-60">/mês</span></div>
+                <button className="w-full bg-[#68121f] py-5 font-black uppercase text-sm tracking-widest hover:bg-[#8a1829] transition-colors shadow-lg">Seja Premium</button>
+              </div>
             </div>
 
             {/* Arquiba Raiz */}
-            <div className="bg-[#121212] border border-[#393939] p-6 flex flex-col hover:border-[#185347] transition-all">
-              <h3 className="text-2xl font-black mb-2 uppercase">Arquiba Raiz</h3>
-              <p className="text-[#185347] font-bold mb-4">Essencial</p>
-              <ul className="text-sm space-y-2 mb-8 flex-grow">
-                <li>✓ Descontos variáveis em ingressos</li>
-                <li>✓ Prioridade 3 no Check-in</li>
-                <li>✓ Acesso à rede de parceiros</li>
+            <div className="bg-[#121212] border border-[#393939] p-6 flex flex-col hover:border-[#185347] transition-all group">
+              <div className="mb-6">
+                <h3 className="text-2xl font-black uppercase leading-none group-hover:text-[#185347] transition-colors">Arquiba Raiz</h3>
+                <div className="h-1 w-12 bg-[#185347] mt-2"></div>
+              </div>
+              <ul className="text-sm space-y-3 mb-8 flex-grow font-medium text-gray-400">
+                <li className="flex gap-2"><span>✓</span> Descontos variáveis em ingressos</li>
+                <li className="flex gap-2"><span>✓</span> Prioridade 3 no Check-in</li>
+                <li className="flex gap-2"><span>✓</span> Rede de parceiros</li>
               </ul>
-              <div className="text-2xl font-bold mb-4">R$ 35,00<span className="text-xs">/mês</span></div>
-              <button className="w-full bg-[#185347] py-3 font-bold uppercase text-sm">Assinar</button>
-            </div>
-
-            {/* Maraca+ */}
-            <div className="bg-[#121212] border-2 border-[#68121f] p-6 flex flex-col scale-105 relative z-10 shadow-2xl">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#68121f] text-[10px] px-2 py-1 font-bold uppercase">Premium</div>
-              <h3 className="text-2xl font-black mb-2 uppercase">Maraca+</h3>
-              <p className="text-[#68121f] font-bold mb-4">Experiência Total</p>
-              <ul className="text-sm space-y-2 mb-8 flex-grow">
-                <li>✓ 100% de desconto em TODOS os setores</li>
-                <li>✓ Prioridade Máxima (0)</li>
-                <li>✓ Kit Sócio Exclusivo</li>
-              </ul>
-              <div className="text-2xl font-bold mb-4">R$ 145,00<span className="text-xs">/mês</span></div>
-              <button className="w-full bg-[#68121f] py-3 font-bold uppercase text-sm">Assinar</button>
+              <div className="mt-auto">
+                <div className="text-3xl font-black mb-4">R$ 35,00<span className="text-xs font-normal opacity-60">/mês</span></div>
+                <button className="w-full bg-[#185347] py-4 font-black uppercase text-sm tracking-widest hover:bg-[#1e6b5c] transition-colors">Assinar Agora</button>
+              </div>
             </div>
 
             {/* Sub-12 */}
-            <div className="bg-[#121212] border border-[#393939] p-6 flex flex-col hover:border-[#185347] transition-all">
-              <h3 className="text-2xl font-black mb-2 uppercase">Sub-12</h3>
-              <p className="text-[#185347] font-bold mb-4">Futuro Tricolor</p>
-              <ul className="text-sm space-y-2 mb-8 flex-grow">
-                <li>✓ 100% de desconto (acompanhado)</li>
-                <li>✓ Experiências infantis</li>
-                <li>✓ Carteirinha Kids</li>
+            <div className="bg-[#121212] border border-[#393939] p-6 flex flex-col hover:border-[#185347] transition-all group">
+              <div className="mb-6">
+                <h3 className="text-2xl font-black uppercase leading-none group-hover:text-[#185347] transition-colors">Sub-12</h3>
+                <div className="h-1 w-12 bg-[#185347] mt-2"></div>
+              </div>
+              <ul className="text-sm space-y-3 mb-8 flex-grow font-medium text-gray-400">
+                <li className="flex gap-2"><span>✓</span> 100% de desconto (acompanhado)</li>
+                <li className="flex gap-2"><span>✓</span> Experiências infantis</li>
+                <li className="flex gap-2"><span>✓</span> Carteirinha Kids</li>
               </ul>
-              <div className="text-2xl font-bold mb-4">R$ 15,00<span className="text-xs">/mês</span></div>
-              <button className="w-full bg-[#185347] py-3 font-bold uppercase text-sm">Assinar</button>
+              <div className="mt-auto">
+                <div className="text-3xl font-black mb-4">R$ 15,00<span className="text-xs font-normal opacity-60">/mês</span></div>
+                <button className="w-full bg-[#185347] py-4 font-black uppercase text-sm tracking-widest hover:bg-[#1e6b5c] transition-colors">Assinar Agora</button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SEÇÃO URGÊNCIA: COMEÇA AGORA! */}
+      {/* SEÇÃO URGÊNCIA */}
       <section className="bg-[#68121f] py-12">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-6xl font-black uppercase mb-4 animate-pulse italic">Começa Agora!</h2>
-          <p className="text-xl font-bold uppercase tracking-widest">O Fluminense em campo precisa da sua voz. Não deixe para depois, a vaga na arquibancada é disputada!</p>
+          <h2 className="text-4xl md:text-6xl font-black uppercase mb-4 animate-pulse italic">O Maraca te espera!</h2>
+          <p className="text-xl font-bold uppercase tracking-widest">Não deixe para a última hora. Garanta sua prioridade nos grandes jogos de 2026.</p>
         </div>
       </section>
 
-      {/* POR QUE SER SÓCIO ARQUIBA AGORA? */}
+      {/* POR QUE SER SÓCIO */}
       <section className="py-24 bg-[#121212]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-black uppercase mb-4">Por Que Ser Sócio <span className="text-[#185347]">Arquiba Agora?</span></h2>
+            <h2 className="text-5xl font-black uppercase mb-4">Vantagens de ser <span className="text-[#185347]">Sócio</span></h2>
             <div className="h-1 w-24 bg-[#68121f] mx-auto"></div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -152,15 +180,14 @@ export default function Home() {
       <section className="py-24 bg-gradient-to-b from-[#171717] to-[#185347]">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-6xl font-black uppercase mb-8 italic leading-tight">
-            TORNE-SE SÓCIO ARQUIBA AGORA!
+            FAÇA PARTE DA HISTÓRIA!
           </h2>
           <p className="text-2xl mb-12 font-medium">
-            A torcida começa com você — vamos juntos empurrar o Flu rumo ao topo! Escolha seu plano e garanta seu lugar no Maracanã!
+            A torcida começa com você — vamos juntos empurrar o Flu rumo ao topo!
           </p>
           <a href="#planos" className="inline-block bg-[#ffffff] text-[#171717] px-12 py-6 rounded-sm font-black text-2xl hover:bg-[#68121f] hover:text-white transition-all duration-300 uppercase shadow-2xl">
-            ESCOLHER MEU PLANO AGORA
+            ESCOLHER MEU PLANO
           </a>
-          <p className="mt-8 text-sm uppercase tracking-widest opacity-70">O Fluminense Football Club conta com você.</p>
         </div>
       </section>
 
