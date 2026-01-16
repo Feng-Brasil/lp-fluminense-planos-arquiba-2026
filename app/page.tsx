@@ -147,49 +147,53 @@ export default function Home() {
       </section>
 
       {/* NOVA SEÇÃO: LEVE SEUS CONVIDADOS PARA O MARACA */}
-      <section className="bg-[#1a1a1a] border-y border-[#393939]">
+      <section className="bg-[#1a1a1a] border-y border-[#393939] overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-stretch">
-          {/* LADO ESQUERDO: IMAGEM */}
-          <div className="w-full md:w-1/2 min-h-[400px] relative overflow-hidden bg-[#121212]">
+          {/* LADO ESQUERDO: ESPAÇO PARA IMAGEM */}
+          <div className="w-full md:w-1/2 min-h-[450px] relative">
             <img 
-              src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=2070&auto=format&fit=crop" 
-              alt="Torcida no Maracanã" 
-              className="absolute inset-0 w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700"
+              src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=1973&auto=format&fit=crop" 
+              alt="Estádio Maracanã" 
+              className="absolute inset-0 w-full h-full object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-500"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#1a1a1a] hidden md:block"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#1a1a1a]"></div>
           </div>
 
           {/* LADO DIREITO: TEXTO */}
           <div className="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center">
-            <h2 className="text-4xl md:text-5xl font-black uppercase leading-none mb-2 text-[#185347]">
+            <h2 className="text-4xl md:text-5xl font-black uppercase leading-tight mb-2 text-[#185347]">
               LEVE SEUS CONVIDADOS PARA O MARACA
             </h2>
-            <h4 className="text-lg md:text-xl font-bold uppercase mb-8 text-gray-300">
+            <p className="text-lg md:text-xl font-bold uppercase mb-8 text-gray-300">
               Inclua convidados e leve seus amigos e familiares para apoiar o Flu no Maracanã!
-            </h4>
+            </p>
             
-            <div className="space-y-6 text-gray-400 font-medium mb-10">
-              <p className="border-l-4 border-[#68121f] pl-4">
-                <strong className="text-white">50% -</strong> Incluindo convidados em seu plano, você pode comprar ingressos extras para eles com 50% de desconto, na mesma prioridade do titular!
-              </p>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <span className="text-[#185347] font-bold">•</span>
-                  <span>No plano Arquiba 75, você pode incluir até 1 convidado. No Arquiba 100, até 3!</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[#185347] font-bold">•</span>
-                  <span>Você pode cadastrar até 5 pessoas e escolher entre elas a cada jogo quem irá poder usar os ingressos extras.</span>
-                </li>
-              </ul>
+            <div className="space-y-6 mb-10">
+              <div className="flex gap-4">
+                <div className="text-3xl font-black text-[#68121f]">50%</div>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  <strong className="text-white uppercase">Desconto em Ingressos:</strong> Incluindo convidados em seu plano, você pode comprar ingressos extras para eles com 50% de desconto, na mesma prioridade do titular!
+                </p>
+              </div>
+              
+              <div className="space-y-4 text-gray-300 font-medium">
+                <div className="flex items-center gap-3">
+                  <span className="text-xl">👫</span>
+                  <p>No plano Arquiba 75, você pode incluir até 1 convidado. No Arquiba 100, até 3!</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-xl">🎟️</span>
+                  <p>Você pode cadastrar até 5 pessoas e escolher entre elas a cada jogo quem irá poder usar os ingressos extras.</p>
+                </div>
+              </div>
             </div>
 
-            <div className="mb-8">
-              <span className="text-xs uppercase tracking-widest opacity-60 block mb-1">Valor por mês por convidado:</span>
+            <div className="bg-[#121212] p-6 border-l-4 border-[#185347] mb-8">
+              <span className="text-[10px] tracking-[0.2em] uppercase opacity-60 block mb-1">Valor por mês por convidado:</span>
               <div className="text-4xl font-black text-white">R$ 25,00</div>
             </div>
 
-            <a href="#" className="inline-block bg-[#68121f] text-center py-4 px-12 font-black uppercase text-sm tracking-widest hover:bg-[#8a1829] transition-colors w-fit">
+            <a href="#" className="bg-[#68121f] text-white py-4 px-10 font-black uppercase text-sm tracking-widest hover:bg-[#8a1829] transition-colors w-fit shadow-xl">
               SEJA SÓCIO
             </a>
           </div>
