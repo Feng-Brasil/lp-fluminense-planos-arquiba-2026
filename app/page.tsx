@@ -17,7 +17,7 @@ export default function Home() {
             </a>
           </div>
 
-          {/* CONTADOR DE SÓCIOS (SUBSTITUINDO NAV LINKS) */}
+          {/* CONTADOR DE SÓCIOS */}
           <div className="hidden lg:flex items-center">
             <div className="bg-[#006437] text-white px-8 py-2.5 rounded-full text-[16px] font-black uppercase tracking-[0.15em] shadow-md border-2 border-[#004d2a]">
               SOMOS 65.432 SÓCIOS DO FLU
@@ -46,64 +46,28 @@ export default function Home() {
             </p>
             
             {/* CONHEÇA OS PLANOS ARQUIBA */}
-            <div className="flex flex-col items-center gap-4 animate-bounce">
-              <span className="text-[14px] font-black text-[#006437] uppercase tracking-[0.2em]">Conheça os planos Arquiba</span>
-              <svg className="w-6 h-6 text-[#006437]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <a href="#planos" className="flex flex-col items-center gap-4 animate-bounce group cursor-pointer decoration-transparent">
+              <span className="text-[14px] font-black text-[#006437] uppercase tracking-[0.2em] group-hover:text-[#9C2A36] transition-colors">Conheça os planos Arquiba</span>
+              <svg className="w-6 h-6 text-[#006437] group-hover:text-[#9C2A36] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
               </svg>
-            </div>
+            </a>
           </div>
         </div>
       </section>
 
       {/* PLANOS GRID */}
-      <section id="planos" className="bg-[#FFFFFF] py-16">
+      <section id="planos" className="bg-[#FFFFFF] py-24">
         <div className="max-w-[1200px] mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
-            {/* PLANO MARACA+ (DESTAQUE) */}
-            <div className="bg-[#FFFFFF] border-2 border-[#9C2A36] rounded-xl overflow-hidden flex flex-col shadow-xl relative transform lg:-translate-y-8 lg:order-2">
-              <div className="bg-[#9C2A36] text-white text-center py-2 text-[12px] font-bold uppercase tracking-widest">
-                O Plano Mais Completo
-              </div>
-              <div className="p-8 bg-[#FFF5F6] border-b border-[#DEE2E6]">
-                <h3 className="text-[24px] font-black text-[#212529] uppercase italic mb-1">Maraca +</h3>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-[14px] font-bold text-[#6C757D]">R$</span>
-                  <span className="text-[42px] font-black text-[#9C2A36]">145</span>
-                  <span className="text-[18px] font-bold text-[#6C757D]">,00</span>
-                  <span className="text-[14px] font-medium text-[#6C757D] ml-1">/mês</span>
-                </div>
-              </div>
-              <div className="p-8 flex-grow">
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-[15px] text-[#212529] font-semibold">
-                    <span className="text-[#9C2A36] mt-1">●</span>
-                    <span>Check-in em qualquer setor do estádio</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[15px] text-[#212529] font-semibold">
-                    <span className="text-[#9C2A36] mt-1">●</span>
-                    <span>Prioridade Máxima de compra</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[15px] text-[#212529] font-semibold">
-                    <span className="text-[#9C2A36] mt-1">●</span>
-                    <span>1 convidado com 50% de desconto</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[15px] text-[#212529] font-semibold">
-                    <span className="text-[#9C2A36] mt-1">●</span>
-                    <span>Kit Sócio exclusivo</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="p-8 pt-0">
-                <button className="w-full bg-[#9C2A36] text-white py-4 rounded-lg font-bold uppercase text-[14px] tracking-wider hover:bg-[#7a212a] transition-colors">
-                  Assinar Agora
-                </button>
-              </div>
-            </div>
+          <div className="text-center mb-16">
+            <h2 className="text-[40px] font-black text-[#212529] uppercase italic">Planos <span className="text-[#006437]">Arquiba</span></h2>
+            <p className="text-[#6C757D] font-medium">Escolha a melhor opção para você apoiar o Fluzão</p>
+          </div>
 
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
             {/* PLANO ARQUIBA 100% */}
-            <div className="bg-[#FFFFFF] border border-[#DEE2E6] rounded-xl overflow-hidden flex flex-col shadow-sm hover:border-[#006437] transition-all group lg:order-1">
+            <div className="bg-[#FFFFFF] border border-[#DEE2E6] rounded-xl overflow-hidden flex flex-col shadow-sm hover:border-[#006437] transition-all group">
               <div className="p-8 bg-[#F8F9FA] border-b border-[#DEE2E6]">
                 <h3 className="text-[24px] font-black text-[#212529] uppercase italic mb-1">Arquiba 100%</h3>
                 <div className="flex items-baseline gap-1">
@@ -137,7 +101,7 @@ export default function Home() {
             </div>
 
             {/* PLANO ARQUIBA 75% */}
-            <div className="bg-[#FFFFFF] border border-[#DEE2E6] rounded-xl overflow-hidden flex flex-col shadow-sm hover:border-[#006437] transition-all group lg:order-3">
+            <div className="bg-[#FFFFFF] border border-[#DEE2E6] rounded-xl overflow-hidden flex flex-col shadow-sm hover:border-[#006437] transition-all group">
               <div className="p-8 bg-[#F8F9FA] border-b border-[#DEE2E6]">
                 <h3 className="text-[24px] font-black text-[#212529] uppercase italic mb-1">Arquiba 75%</h3>
                 <div className="flex items-baseline gap-1">
@@ -200,6 +164,47 @@ export default function Home() {
               <div className="p-8 pt-0">
                 <button className="w-full bg-[#006437] text-white py-4 rounded-lg font-bold uppercase text-[14px] tracking-wider hover:bg-[#004d2a] transition-colors">
                   Quero este plano
+                </button>
+              </div>
+            </div>
+
+            {/* PLANO MARACA+ (DESTAQUE) */}
+            <div className="bg-[#FFFFFF] border-2 border-[#9C2A36] rounded-xl overflow-hidden flex flex-col shadow-xl relative transform lg:scale-105 z-10">
+              <div className="bg-[#9C2A36] text-white text-center py-2 text-[12px] font-bold uppercase tracking-widest">
+                O Plano Mais Completo
+              </div>
+              <div className="p-8 bg-[#FFF5F6] border-b border-[#DEE2E6]">
+                <h3 className="text-[24px] font-black text-[#212529] uppercase italic mb-1">Maraca +</h3>
+                <div className="flex items-baseline gap-1">
+                  <span className="text-[14px] font-bold text-[#6C757D]">R$</span>
+                  <span className="text-[42px] font-black text-[#9C2A36]">145</span>
+                  <span className="text-[18px] font-bold text-[#6C757D]">,00</span>
+                  <span className="text-[14px] font-medium text-[#6C757D] ml-1">/mês</span>
+                </div>
+              </div>
+              <div className="p-8 flex-grow">
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3 text-[15px] text-[#212529] font-semibold">
+                    <span className="text-[#9C2A36] mt-1">●</span>
+                    <span>Check-in em qualquer setor do estádio</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-[15px] text-[#212529] font-semibold">
+                    <span className="text-[#9C2A36] mt-1">●</span>
+                    <span>Prioridade Máxima de compra</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-[15px] text-[#212529] font-semibold">
+                    <span className="text-[#9C2A36] mt-1">●</span>
+                    <span>1 convidado com 50% de desconto</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-[15px] text-[#212529] font-semibold">
+                    <span className="text-[#9C2A36] mt-1">●</span>
+                    <span>Kit Sócio exclusivo</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="p-8 pt-0">
+                <button className="w-full bg-[#9C2A36] text-white py-4 rounded-lg font-bold uppercase text-[14px] tracking-wider hover:bg-[#7a212a] transition-colors">
+                  Assinar Agora
                 </button>
               </div>
             </div>
