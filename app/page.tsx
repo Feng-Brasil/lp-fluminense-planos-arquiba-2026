@@ -34,12 +34,12 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* HERO SECTION - ARQUIBA 100% STYLE */}
+      {/* HERO SECTION - ARQUIBA 60% STYLE (COPIED FROM LINK) */}
       <section className="relative w-full bg-[#006437] overflow-hidden min-h-[600px] flex items-center">
         {/* BACKGROUND IMAGE */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://nense.com.br/assets/img/planos/arquiba-100/bg-topo.jpg" 
+            src="https://nense.com.br/assets/img/planos/arquiba-60/bg-topo.jpg" 
             alt="Background Arquiba" 
             className="w-full h-full object-cover object-center opacity-40"
           />
@@ -52,14 +52,14 @@ export default function Home() {
             {/* LEFT CONTENT */}
             <div className="text-white">
               <div className="inline-block bg-[#9C2A36] text-white px-4 py-1 rounded mb-6 text-[14px] font-bold uppercase tracking-wider">
-                Plano Arquiba 100%
+                Plano Arquiba 60%
               </div>
               <h1 className="text-[48px] md:text-[80px] font-black leading-[0.9] uppercase italic mb-6">
                 O MARACA É <br />
                 <span className="text-[#9C2A36]">SUA CASA.</span>
               </h1>
               <p className="text-[18px] md:text-[22px] font-medium mb-8 max-w-lg leading-relaxed">
-                Garanta 100% de desconto em todos os jogos com mando de campo do Fluminense no setor de arquibancada.
+                Garanta 60% de desconto em todos os jogos com mando de campo do Fluminense no setor de arquibancada.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
@@ -67,7 +67,7 @@ export default function Home() {
                   <span className="text-[14px] uppercase font-bold opacity-80">A partir de</span>
                   <div className="flex items-baseline gap-1">
                     <span className="text-[20px] font-bold">R$</span>
-                    <span className="text-[56px] font-black leading-none">85</span>
+                    <span className="text-[56px] font-black leading-none">55</span>
                     <span className="text-[16px] font-medium">/mês</span>
                   </div>
                 </div>
@@ -82,8 +82,8 @@ export default function Home() {
               <div className="relative group">
                 <div className="absolute -inset-4 bg-[#9C2A36] opacity-20 blur-3xl rounded-full group-hover:opacity-40 transition-opacity"></div>
                 <img 
-                  src="https://nense.com.br/assets/img/planos/arquiba-100/card-arquiba-100.png" 
-                  alt="Cartão Arquiba 100%" 
+                  src="https://nense.com.br/assets/img/planos/arquiba-60/card-arquiba-60.png" 
+                  alt="Cartão Arquiba 60%" 
                   className="relative z-10 w-[450px] drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)] transform rotate-[-5deg] hover:rotate-0 transition-transform duration-500"
                 />
               </div>
@@ -118,7 +118,7 @@ export default function Home() {
                 <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Arquiba 100%</h3>
                 <div className="flex items-baseline gap-1">
                   <span className="text-[12px] font-bold text-[#6C757D]">R$</span>
-                  <span className="text-[32px] font-black text-[#006437]">85</span>
+                  <span className="text-[32px] font-black text-[#006437]">95</span>
                   <span className="text-[12px] font-medium text-[#6C757D]">/mês</span>
                 </div>
               </div>
@@ -141,13 +141,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* PLANO ARQUIBA 75% */}
+            {/* PLANO ARQUIBA 60% */}
             <div className="bg-[#FFFFFF] border border-[#DEE2E6] rounded-xl overflow-hidden flex flex-col shadow-sm hover:border-[#006437] transition-all group">
               <div className="p-5 bg-[#F8F9FA] border-b border-[#DEE2E6]">
-                <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Arquiba 75%</h3>
+                <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Arquiba 60%</h3>
                 <div className="flex items-baseline gap-1">
                   <span className="text-[12px] font-bold text-[#6C757D]">R$</span>
-                  <span className="text-[32px] font-black text-[#006437]">60</span>
+                  <span className="text-[32px] font-black text-[#006437]">55</span>
                   <span className="text-[12px] font-medium text-[#6C757D]">/mês</span>
                 </div>
               </div>
@@ -155,7 +155,7 @@ export default function Home() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2 text-[13px] text-[#495057]">
                     <span className="text-[#006437] font-bold">✓</span>
-                    <span><strong>75% desc.</strong> em arquibancada</span>
+                    <span><strong>60% desc.</strong> em arquibancada</span>
                   </li>
                   <li className="flex items-start gap-2 text-[13px] text-[#495057]">
                     <span className="text-[#006437] font-bold">✓</span>
@@ -170,13 +170,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* PLANO RAIZ */}
+            {/* PLANO GUERREIRO */}
             <div className="bg-[#FFFFFF] border border-[#DEE2E6] rounded-xl overflow-hidden flex flex-col shadow-sm hover:border-[#006437] transition-all group">
               <div className="p-5 bg-[#F8F9FA] border-b border-[#DEE2E6]">
-                <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Raiz</h3>
+                <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Guerreiro</h3>
                 <div className="flex items-baseline gap-1">
                   <span className="text-[12px] font-bold text-[#6C757D]">R$</span>
-                  <span className="text-[32px] font-black text-[#006437]">35</span>
+                  <span className="text-[32px] font-black text-[#006437]">25</span>
                   <span className="text-[12px] font-medium text-[#6C757D]">/mês</span>
                 </div>
               </div>
@@ -184,7 +184,7 @@ export default function Home() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2 text-[13px] text-[#495057]">
                     <span className="text-[#006437] font-bold">✓</span>
-                    <span>Acesso à compra de ingressos</span>
+                    <span><strong>20% desc.</strong> em arquibancada</span>
                   </li>
                   <li className="flex items-start gap-2 text-[13px] text-[#495057]">
                     <span className="text-[#006437] font-bold">✓</span>
@@ -199,7 +199,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* PLANO MARACA+ (DESTAQUE) */}
+            {/* PLANO MARACA+ */}
             <div className="bg-[#FFFFFF] border-2 border-[#9C2A36] rounded-xl overflow-hidden flex flex-col shadow-xl relative z-10 transform lg:scale-105">
               <div className="bg-[#9C2A36] text-white text-center py-1.5 text-[10px] font-bold uppercase tracking-widest">
                 Plano Premium
@@ -208,7 +208,7 @@ export default function Home() {
                 <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Maraca +</h3>
                 <div className="flex items-baseline gap-1">
                   <span className="text-[12px] font-bold text-[#6C757D]">R$</span>
-                  <span className="text-[32px] font-black text-[#9C2A36]">145</span>
+                  <span className="text-[32px] font-black text-[#9C2A36]">175</span>
                   <span className="text-[12px] font-medium text-[#6C757D]">/mês</span>
                 </div>
               </div>
