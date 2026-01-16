@@ -16,13 +16,10 @@ export default function Home() {
           
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-3 font-bold text-sm tracking-widest">
-              <a href="#" className="hover:text-[#185347] transition-colors">LOGIN</a>
+              <a href="#" className="hover:text-[#185347] transition-colors uppercase">LOGIN</a>
               <span className="text-[#393939]">|</span>
-              <a href="#" className="hover:text-[#185347] transition-colors">SEJA SÓCIO</a>
+              <a href="#" className="hover:text-[#185347] transition-colors uppercase">SEJA SÓCIO</a>
             </div>
-            <a href="#planos" className="bg-[#ffffff] text-[#171717] px-6 py-2 rounded-full font-bold text-sm hover:bg-[#185347] hover:text-white transition-all duration-300">
-              ASSINE JÁ
-            </a>
           </div>
         </div>
       </nav>
@@ -33,14 +30,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-[#185347] inline-block px-4 py-1 mb-6 rounded-sm">
-              <span className="text-white font-bold tracking-[0.2em] uppercase text-sm">SOMOS 75.432 SÓCIOS DO FLU</span>
+              <span className="text-white font-bold tracking-[0.2em] uppercase text-sm">SOMOS XXXX SÓCIOS DO FLU</span>
             </div>
-            <span className="text-[#185347] font-bold tracking-widest uppercase mb-4 block italic">TEMPORADA 2026 COMEÇOU!</span>
-            <h1 className="text-5xl md:text-7xl font-black uppercase leading-none mb-6 italic">
-              PLANOS <span className="text-[#68121f]">ARQUIBA</span>
+            
+            <h1 className="text-5xl md:text-7xl font-black uppercase leading-none mb-6 italic text-center">
+              2026 <span className="text-[#68121f]">COMEÇOU!</span>
             </h1>
-            <p className="text-xl text-gray-300 mb-10 mx-auto leading-relaxed uppercase font-bold">
-              SOMOS MARACANÃ, A TEMPORADA COMEÇA AGORA E A TORCIDA TRICOLOR JOGANDO JUNTO FAZ TODA DIFERENÇA! SEJA PARTE DO INÍCIO DESSES NOVOS DESAFIOS DE DENTRO DO MARACA!
+            <p className="text-xl text-gray-300 mb-10 mx-auto leading-relaxed uppercase font-bold text-center">
+              A temporada está só no início e com torcida tricolor jogando junto somos muito fortes! Seja parte da história desse ano dentro do Maraca.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#planos" className="bg-[#ffffff] text-[#171717] px-8 py-5 rounded-sm font-black text-xl text-center hover:bg-[#68121f] hover:text-white transition-all duration-500 uppercase">
@@ -182,7 +179,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-[#185347] rounded-full flex items-center justify-center font-bold text-sm">FFC</div>
-            <span className="font-bold uppercase tracking-widest">Fluminense Football Club © 2024</span>
+            <span className="font-bold uppercase tracking-widest">Fluminense Football Club © 2026</span>
           </div>
           <div className="flex gap-6 text-sm text-gray-400 uppercase font-bold">
             <a href="#" className="hover:text-[#185347]">Privacidade</a>
