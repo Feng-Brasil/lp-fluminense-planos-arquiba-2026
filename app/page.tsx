@@ -34,58 +34,86 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* HERO SECTION - ARQUIBA 60% STYLE (COPIED FROM LINK) */}
-      <section className="relative w-full bg-[#006437] overflow-hidden min-h-[600px] flex items-center">
+      {/* HERO SECTION - ARQUIBA IMPACT */}
+      <section className="relative w-full bg-[#006437] overflow-hidden min-h-[700px] flex items-center">
         {/* BACKGROUND IMAGE */}
         <div className="absolute inset-0 z-0">
           <img 
             src="https://nense.com.br/assets/img/planos/arquiba-60/bg-topo.jpg" 
-            alt="Background Arquiba" 
-            className="w-full h-full object-cover object-center opacity-40"
+            alt="Torcida do Fluminense no Maracanã" 
+            className="w-full h-full object-cover object-center opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#006437] via-transparent to-transparent opacity-80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#006437] via-[#006437]/80 to-transparent"></div>
         </div>
 
-        <div className="max-w-[1200px] mx-auto px-4 w-full relative z-10 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-[1200px] mx-auto px-4 w-full relative z-10 py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             {/* LEFT CONTENT */}
-            <div className="text-white">
-              <div className="inline-block bg-[#9C2A36] text-white px-4 py-1 rounded mb-6 text-[14px] font-bold uppercase tracking-wider">
-                Plano Arquiba 60%
+            <div className="lg:col-span-7 text-white">
+              <div className="inline-flex items-center gap-2 bg-[#9C2A36] text-white px-4 py-1.5 rounded-full mb-6 text-[14px] font-bold uppercase tracking-widest shadow-lg">
+                <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                Planos Arquiba
               </div>
-              <h1 className="text-[48px] md:text-[80px] font-black leading-[0.9] uppercase italic mb-6">
-                O MARACA É <br />
-                <span className="text-[#9C2A36]">SUA CASA.</span>
-              </h1>
-              <p className="text-[18px] md:text-[22px] font-medium mb-8 max-w-lg leading-relaxed">
-                Garanta 60% de desconto em todos os jogos com mando de campo do Fluminense no setor de arquibancada.
-              </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-                <div className="flex flex-col">
-                  <span className="text-[14px] uppercase font-bold opacity-80">A partir de</span>
-                  <div className="flex items-baseline gap-1">
-                    <span className="text-[20px] font-bold">R$</span>
-                    <span className="text-[56px] font-black leading-none">55</span>
-                    <span className="text-[16px] font-medium">/mês</span>
+              <h1 className="text-[42px] md:text-[72px] font-black leading-[0.95] uppercase italic mb-6 drop-shadow-md">
+                SINTA O PULSO DO <br />
+                <span className="text-[#9C2A36]">GRAMADO DE PERTO.</span>
+              </h1>
+              
+              <p className="text-[18px] md:text-[24px] font-bold mb-8 max-w-2xl leading-tight text-gray-100">
+                O Maracanã é o seu lugar. Garanta prioridade máxima, descontos exclusivos e a emoção de viver o Fluminense de dentro da arquibancada.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+                <div className="flex items-center gap-3">
+                  <div className="bg-[#9C2A36] p-1 rounded-full">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
                   </div>
+                  <span className="font-bold text-[16px] uppercase">Prioridade total na compra</span>
                 </div>
-                <a href="#" className="bg-[#9C2A36] hover:bg-[#7a212a] text-white px-10 py-5 rounded-lg font-black uppercase text-[18px] transition-all shadow-xl hover:scale-105">
-                  Assinar Agora
+                <div className="flex items-center gap-3">
+                  <div className="bg-[#9C2A36] p-1 rounded-full">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
+                  </div>
+                  <span className="font-bold text-[16px] uppercase">Até 100% de desconto</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="bg-[#9C2A36] p-1 rounded-full">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
+                  </div>
+                  <span className="font-bold text-[16px] uppercase">Inclusão de convidados</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="bg-[#9C2A36] p-1 rounded-full">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
+                  </div>
+                  <span className="font-bold text-[16px] uppercase">Experiências exclusivas</span>
+                </div>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="#planos" className="bg-[#9C2A36] hover:bg-[#7a212a] text-white px-10 py-5 rounded-lg font-black uppercase text-[20px] transition-all shadow-[0_10px_20px_rgba(156,42,54,0.4)] hover:-translate-y-1 text-center">
+                  Faça parte agora
+                </a>
+                <a href="#info" className="bg-transparent border-2 border-white hover:bg-white hover:text-[#006437] text-white px-10 py-5 rounded-lg font-black uppercase text-[20px] transition-all text-center">
+                  Saiba mais
                 </a>
               </div>
             </div>
 
             {/* RIGHT CONTENT - CARD MOCKUP */}
-            <div className="hidden lg:flex justify-end">
-              <div className="relative group">
-                <div className="absolute -inset-4 bg-[#9C2A36] opacity-20 blur-3xl rounded-full group-hover:opacity-40 transition-opacity"></div>
+            <div className="lg:col-span-5 hidden lg:flex justify-center relative">
+              <div className="relative">
+                <div className="absolute -inset-10 bg-[#9C2A36] opacity-30 blur-[100px] rounded-full"></div>
                 <img 
                   src="https://nense.com.br/assets/img/planos/arquiba-60/card-arquiba-60.png" 
-                  alt="Cartão Arquiba 60%" 
-                  className="relative z-10 w-[450px] drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)] transform rotate-[-5deg] hover:rotate-0 transition-transform duration-500"
+                  alt="Cartão Sócio Futebol Arquiba" 
+                  className="relative z-10 w-[480px] drop-shadow-[0_50px_50px_rgba(0,0,0,0.6)] transform rotate-[-6deg] hover:rotate-0 transition-transform duration-700 ease-out"
                 />
+                <div className="absolute -bottom-6 -right-6 z-20 bg-white p-4 rounded-xl shadow-2xl transform rotate-3 hidden xl:block">
+                  <p className="text-[#006437] font-black text-[12px] uppercase leading-tight">Sua cadeira no<br/>Maraca te espera!</p>
+                </div>
               </div>
             </div>
 
@@ -94,7 +122,7 @@ export default function Home() {
 
         {/* BOTTOM WAVE DECORATION */}
         <div className="absolute bottom-0 left-0 w-full leading-[0] z-20">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-[60px] fill-white">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-[70px] fill-white">
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C58.47,105.1,123.61,105.54,182.21,95.83,240.81,86.12,263.39,67.23,321.39,56.44Z"></path>
           </svg>
         </div>
@@ -131,6 +159,10 @@ export default function Home() {
                   <li className="flex items-start gap-2 text-[13px] text-[#495057]">
                     <span className="text-[#006437] font-bold">✓</span>
                     <span><strong>Prioridade 1</strong> no check-in</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
+                    <span className="text-[#006437] font-bold">✓</span>
+                    <span>Até 3 convidados</span>
                   </li>
                 </ul>
               </div>
@@ -265,7 +297,7 @@ export default function Home() {
       </section>
 
       {/* INFO SECTION */}
-      <section className="bg-[#F8F9FA] py-20 border-t border-gray-100">
+      <section id="info" className="bg-[#F8F9FA] py-20 border-t border-gray-100">
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
