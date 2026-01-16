@@ -1,6 +1,13 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#171717] text-[#ffffff] selection:bg-[#68121f] selection:text-white" style={{ fontFamily: 'Oswald, sans-serif' }}>
+      {/* TRICOLOR TOP BAR */}
+      <div className="w-full h-3 flex">
+        <div className="flex-1 bg-[#68121f]"></div>
+        <div className="w-4 bg-[#ffffff]"></div>
+        <div className="flex-1 bg-[#185347]"></div>
+      </div>
+
       {/* HEADER / NAVIGATION */}
       <nav className="border-b border-[#393939] bg-[#171717] sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
@@ -14,6 +21,14 @@ export default function Home() {
             </div>
           </div>
           
+          {/* CONTADOR DE SÓCIOS INTEGRADO À BARRA SUPERIOR */}
+          <div className="hidden md:flex flex-col items-center justify-center bg-[#185347] px-6 py-2 border-x border-[#68121f] h-20">
+            <span className="text-white font-black tracking-tighter uppercase text-2xl block leading-none">
+              <span className="text-[#ffffff]">65.432</span> SÓCIOS
+            </span>
+            <span className="text-[10px] text-center block tracking-[0.2em] opacity-80 font-bold">SOMOS FLUMINENSE</span>
+          </div>
+          
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-3 font-bold text-sm tracking-widest">
               <a href="#" className="hover:text-[#185347] transition-colors uppercase">LOGIN</a>
@@ -25,19 +40,9 @@ export default function Home() {
       </nav>
 
       {/* HERO SECTION + PLANOS (JOINED SCROLL) */}
-      <section className="relative overflow-hidden pt-4 pb-24">
+      <section className="relative overflow-hidden pt-12 pb-24">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#185347]/20 to-transparent pointer-events-none"></div>
         
-        {/* CONTADOR DE SÓCIOS - AUMENTADO E POSICIONADO MAIS ACIMA */}
-        <div className="w-full flex justify-center mb-12">
-          <div className="bg-[#185347] px-10 py-4 rounded-sm shadow-[0_0_50px_rgba(24,83,71,0.4)] transform hover:scale-105 transition-transform duration-500 border-b-4 border-[#68121f]">
-            <span className="text-white font-black tracking-[0.3em] uppercase text-3xl md:text-5xl block text-center">
-              SOMOS <span className="text-[#ffffff]">65.432</span> SÓCIOS
-            </span>
-            <span className="text-xs text-center block tracking-[0.5em] mt-1 opacity-80">FLUMINENSE FOOTBALL CLUB</span>
-          </div>
-        </div>
-
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h1 className="text-6xl md:text-8xl font-black uppercase leading-none mb-6 italic text-center tracking-tighter">
@@ -48,7 +53,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* PLANOS INTEGRADOS NO PRIMEIRO SCROLL (ESTILO NENSE.COM.BR) */}
+          {/* PLANOS INTEGRADOS NO PRIMEIRO SCROLL */}
           <div id="planos" className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3 items-stretch">
             {/* Arquiba 100% */}
             <div className="bg-[#121212] border border-[#393939] p-6 flex flex-col hover:border-[#185347] transition-all group">
