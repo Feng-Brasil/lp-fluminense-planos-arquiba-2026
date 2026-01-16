@@ -24,13 +24,13 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* HERO SECTION */}
-      <section className="relative overflow-hidden pt-20 pb-32">
+      {/* HERO SECTION + PLANOS (JOINED SCROLL) */}
+      <section className="relative overflow-hidden pt-10 pb-24">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#185347]/20 to-transparent pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-[#185347] inline-block px-4 py-1 mb-6 rounded-sm">
-              <span className="text-white font-bold tracking-[0.2em] uppercase text-sm">SOMOS XXXX SÓCIOS DO FLU</span>
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <div className="bg-[#185347] inline-block px-6 py-2 mb-10 rounded-sm shadow-xl transform -translate-y-4">
+              <span className="text-white font-black tracking-[0.25em] uppercase text-xl md:text-2xl">SOMOS XXXX SÓCIOS DO FLU</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-black uppercase leading-none mb-6 italic text-center">
@@ -39,56 +39,10 @@ export default function Home() {
             <p className="text-xl text-gray-300 mb-10 mx-auto leading-relaxed uppercase font-bold text-center">
               A temporada está só no início e com torcida tricolor jogando junto somos muito fortes! Seja parte da história desse ano dentro do Maraca.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#planos" className="bg-[#ffffff] text-[#171717] px-8 py-5 rounded-sm font-black text-xl text-center hover:bg-[#68121f] hover:text-white transition-all duration-500 uppercase">
-                TORNE-SE SÓCIO ARQUIBA AGORA!
-              </a>
-            </div>
           </div>
-        </div>
-      </section>
 
-      {/* SEÇÃO URGÊNCIA: COMEÇA AGORA! */}
-      <section className="bg-[#68121f] py-12">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-6xl font-black uppercase mb-4 animate-pulse italic">Começa Agora!</h2>
-          <p className="text-xl font-bold uppercase tracking-widest">O Fluminense em campo precisa da sua voz. Não deixe para depois, a vaga na arquibancada é disputada!</p>
-        </div>
-      </section>
-
-      {/* POR QUE SER SÓCIO ARQUIBA AGORA? */}
-      <section className="py-24 bg-[#121212]">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-black uppercase mb-4">Por Que Ser Sócio <span className="text-[#185347]">Arquiba Agora?</span></h2>
-            <div className="h-1 w-24 bg-[#68121f] mx-auto"></div>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-[#171717] p-8 border-t-4 border-[#185347]">
-              <h3 className="text-xl font-bold mb-4 uppercase text-[#185347]">Economia Real</h3>
-              <p className="text-gray-400">Ingressos com descontos agressivos que se pagam em apenas dois jogos no mês.</p>
-            </div>
-            <div className="bg-[#171717] p-8 border-t-4 border-[#68121f]">
-              <h3 className="text-xl font-bold mb-4 uppercase text-[#68121f]">Prioridade Total</h3>
-              <p className="text-gray-400">Garanta seu lugar em clássicos e jogos decisivos antes da abertura para o público geral.</p>
-            </div>
-            <div className="bg-[#171717] p-8 border-t-4 border-[#185347]">
-              <h3 className="text-xl font-bold mb-4 uppercase text-[#185347]">Acesso Facilitado</h3>
-              <p className="text-gray-400">Check-in online rápido e prático, sem filas físicas ou estresse de última hora.</p>
-            </div>
-            <div className="bg-[#171717] p-8 border-t-4 border-[#68121f]">
-              <h3 className="text-xl font-bold mb-4 uppercase text-[#68121f]">Clube de Vantagens</h3>
-              <p className="text-gray-400">Descontos em produtos oficiais e em uma rede de parceiros exclusivos em todo o Brasil.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* DETALHAMENTO DOS PLANOS ARQUIBA */}
-      <section id="planos" className="py-24 bg-[#171717]">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-5xl font-black uppercase mb-16 text-center italic">Escolha seu <span className="text-[#185347]">Plano Arquiba</span></h2>
-          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
+          {/* PLANOS INTEGRADOS NO PRIMEIRO SCROLL */}
+          <div id="planos" className="grid md:grid-cols-3 lg:grid-cols-5 gap-4 mt-12">
             {/* Arquiba 100% */}
             <div className="bg-[#121212] border border-[#393939] p-6 flex flex-col hover:border-[#185347] transition-all">
               <h3 className="text-2xl font-black mb-2 uppercase">Arquiba 100%</h3>
@@ -129,7 +83,7 @@ export default function Home() {
             </div>
 
             {/* Maraca+ */}
-            <div className="bg-[#121212] border-2 border-[#68121f] p-6 flex flex-col scale-105 relative">
+            <div className="bg-[#121212] border-2 border-[#68121f] p-6 flex flex-col scale-105 relative z-10 shadow-2xl">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#68121f] text-[10px] px-2 py-1 font-bold uppercase">Premium</div>
               <h3 className="text-2xl font-black mb-2 uppercase">Maraca+</h3>
               <p className="text-[#68121f] font-bold mb-4">Experiência Total</p>
@@ -153,6 +107,42 @@ export default function Home() {
               </ul>
               <div className="text-2xl font-bold mb-4">R$ 15,00<span className="text-xs">/mês</span></div>
               <button className="w-full bg-[#185347] py-3 font-bold uppercase text-sm">Assinar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SEÇÃO URGÊNCIA: COMEÇA AGORA! */}
+      <section className="bg-[#68121f] py-12">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-6xl font-black uppercase mb-4 animate-pulse italic">Começa Agora!</h2>
+          <p className="text-xl font-bold uppercase tracking-widest">O Fluminense em campo precisa da sua voz. Não deixe para depois, a vaga na arquibancada é disputada!</p>
+        </div>
+      </section>
+
+      {/* POR QUE SER SÓCIO ARQUIBA AGORA? */}
+      <section className="py-24 bg-[#121212]">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-black uppercase mb-4">Por Que Ser Sócio <span className="text-[#185347]">Arquiba Agora?</span></h2>
+            <div className="h-1 w-24 bg-[#68121f] mx-auto"></div>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-[#171717] p-8 border-t-4 border-[#185347]">
+              <h3 className="text-xl font-bold mb-4 uppercase text-[#185347]">Economia Real</h3>
+              <p className="text-gray-400">Ingressos com descontos agressivos que se pagam em apenas dois jogos no mês.</p>
+            </div>
+            <div className="bg-[#171717] p-8 border-t-4 border-[#68121f]">
+              <h3 className="text-xl font-bold mb-4 uppercase text-[#68121f]">Prioridade Total</h3>
+              <p className="text-gray-400">Garanta seu lugar em clássicos e jogos decisivos antes da abertura para o público geral.</p>
+            </div>
+            <div className="bg-[#171717] p-8 border-t-4 border-[#185347]">
+              <h3 className="text-xl font-bold mb-4 uppercase text-[#185347]">Acesso Facilitado</h3>
+              <p className="text-gray-400">Check-in online rápido e prático, sem filas físicas ou estresse de última hora.</p>
+            </div>
+            <div className="bg-[#171717] p-8 border-t-4 border-[#68121f]">
+              <h3 className="text-xl font-bold mb-4 uppercase text-[#68121f]">Clube de Vantagens</h3>
+              <p className="text-gray-400">Descontos em produtos oficiais e em uma rede de parceiros exclusivos em todo o Brasil.</p>
             </div>
           </div>
         </div>
