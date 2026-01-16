@@ -39,11 +39,16 @@ export default function Home() {
       <section className="relative bg-[#F8F9FA] py-16 border-b border-gray-200">
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="flex flex-col items-center text-center">
+            {/* CONTADOR ADICIONADO */}
+            <div className="bg-[#006437] text-white px-6 py-2 rounded-full text-[14px] font-black uppercase tracking-widest mb-6 shadow-md">
+              SOMOS 65.432 SÓCIOS DO FLU
+            </div>
+            
             <h1 className="text-[40px] md:text-[56px] font-black text-[#212529] leading-tight mb-4 uppercase italic tracking-tighter">
-              ESCOLHA O SEU <span className="text-[#006437]">PLANO</span>
+              2026 <span className="text-[#9C2A36]">COMEÇOU!</span>
             </h1>
             <p className="text-[18px] text-[#6C757D] max-w-2xl font-medium leading-relaxed">
-              Seja a força do Fluminense. Escolha o plano que mais combina com você e garanta benefícios exclusivos.
+              A temporada está só no início e com torcida tricolor jogando junto somos muito fortes! Seja parte da história desse ano dentro do Maraca.
             </p>
           </div>
         </div>
