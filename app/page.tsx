@@ -1,12 +1,10 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#FFFFFF] text-[#212529] selection:bg-[#9C2A36] selection:text-white" style={{ fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
+    <main className="min-h-screen bg-[#FFFFFF] text-[#1C1C1C] selection:bg-[#AA1A2F] selection:text-white" style={{ fontFamily: 'Inter, sans-serif' }}>
       
       {/* HEADER / NAVIGATION */}
       <nav className="bg-[#FFFFFF] border-b border-gray-100 sticky top-0 z-50">
         <div className="max-w-[1200px] mx-auto px-4 h-20 flex items-center justify-between">
-          
-          {/* LOGO */}
           <div className="flex items-center">
             <a href="/" className="flex items-center">
               <img 
@@ -17,374 +15,172 @@ export default function Home() {
             </a>
           </div>
 
-          {/* CONTADOR DE SÓCIOS */}
           <div className="hidden lg:flex items-center">
-            <div className="bg-[#006437] text-white px-8 py-2.5 rounded-full text-[16px] font-black uppercase tracking-[0.15em] shadow-md border-2 border-[#004d2a]">
+            <div className="bg-[#008C3A] text-white px-8 py-2.5 rounded-full text-[16px] font-bold uppercase tracking-wider shadow-md">
               SOMOS 65.432 SÓCIOS DO FLU
             </div>
           </div>
           
-          {/* ACTIONS */}
           <div className="flex items-center gap-3">
-            <a href="#" className="text-[14px] font-bold text-[#495057] px-4 uppercase">Login</a>
-            <a href="#planos" className="bg-[#006437] text-white px-6 py-3 text-[14px] font-bold rounded-md hover:bg-[#004d2a] transition-all uppercase">
+            <a href="#" className="text-[14px] font-bold text-[#1C1C1C] px-4 uppercase">Login</a>
+            <a href="#planos" className="bg-[#008C3A] text-white px-6 py-3 text-[14px] font-bold rounded-md hover:bg-[#006b2c] transition-all uppercase">
               Seja Sócio
             </a>
           </div>
         </div>
       </nav>
 
-      {/* HERO SECTION - ARQUIBA IMPACT */}
-      <section className="relative w-full bg-[#006437] overflow-hidden min-h-[700px] flex items-center">
-        {/* BACKGROUND IMAGE */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://nense.com.br/assets/img/planos/arquiba-60/bg-topo.jpg" 
-            alt="Torcida do Fluminense no Maracanã" 
-            className="w-full h-full object-cover object-center opacity-30"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#006437] via-[#006437]/80 to-transparent"></div>
-        </div>
-
-        <div className="max-w-[1200px] mx-auto px-4 w-full relative z-10 py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      {/* HERO SECTION - PRIMEIRO SCROLL */}
+      <section className="relative w-full bg-[#FFFFFF] overflow-hidden">
+        <div className="max-w-[1200px] mx-auto px-4 py-[64px] lg:py-[96px]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-[24px] items-center">
             
-            {/* LEFT CONTENT */}
-            <div className="lg:col-span-7 text-white">
-              <div className="inline-flex items-center gap-2 bg-[#9C2A36] text-white px-4 py-1.5 rounded-full mb-6 text-[14px] font-bold uppercase tracking-widest shadow-lg">
-                <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-                Planos Arquiba
-              </div>
-              
-              <h1 className="text-[42px] md:text-[72px] font-black leading-[0.95] uppercase italic mb-6 drop-shadow-md">
-                SINTA O PULSO DO <br />
-                <span className="text-[#9C2A36]">GRAMADO DE PERTO.</span>
+            {/* LEFT CONTENT (TEXTO PRINCIPAL) */}
+            <div className="lg:col-span-7 flex flex-col gap-[24px]">
+              <h1 className="text-[36px] lg:text-[48px] font-bold leading-[1.2] text-[#1C1C1C]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                Seja Sócio Arquiba – Sócio Futebol do Fluminense
               </h1>
               
-              <p className="text-[18px] md:text-[24px] font-bold mb-8 max-w-2xl leading-tight text-gray-100">
-                O Maracanã é o seu lugar. Garanta prioridade máxima, descontos exclusivos e a emoção de viver o Fluminense de dentro da arquibancada.
+              <h2 className="text-[24px] lg:text-[28px] font-semibold leading-[1.4] text-[#1C1C1C]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                Prioridade na compra de ingressos + descontos de até 100% para jogos no Maracanã
+              </h2>
+              
+              <p className="text-[16px] lg:text-[18px] font-normal leading-[1.6] text-[#1C1C1C] max-w-xl">
+                Contrate agora seu plano Arquiba e garanta check-in com benefícios exclusivos, além de descontos em ingressos e produtos oficiais.
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
-                <div className="flex items-center gap-3">
-                  <div className="bg-[#9C2A36] p-1 rounded-full">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
-                  </div>
-                  <span className="font-bold text-[16px] uppercase">Prioridade total na compra</span>
+              {/* BENEFÍCIOS RÁPIDOS */}
+              <div className="flex flex-col gap-[16px]">
+                <div className="flex items-center gap-3 text-[18px] lg:text-[20px] font-semibold leading-[1.5]" style={{ color: '#1C1C1C' }}>
+                  <span className="text-[#008C3A]">🔥</span>
+                  <span>Check-in com desconto de até 100%</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="bg-[#9C2A36] p-1 rounded-full">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
-                  </div>
-                  <span className="font-bold text-[16px] uppercase">Até 100% de desconto</span>
+                <div className="flex items-center gap-3 text-[18px] lg:text-[20px] font-semibold leading-[1.5]" style={{ color: '#1C1C1C' }}>
+                  <span className="text-[#008C3A]">🎟️</span>
+                  <span>Prioridade na compra de ingressos</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="bg-[#9C2A36] p-1 rounded-full">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
-                  </div>
-                  <span className="font-bold text-[16px] uppercase">Inclusão de convidados</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="bg-[#9C2A36] p-1 rounded-full">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
-                  </div>
-                  <span className="font-bold text-[16px] uppercase">Experiências exclusivas</span>
+                <div className="flex items-center gap-3 text-[18px] lg:text-[20px] font-semibold leading-[1.5]" style={{ color: '#1C1C1C' }}>
+                  <span className="text-[#008C3A]">👥</span>
+                  <span>Leve convidados com vantagens</span>
                 </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a href="#planos" className="bg-[#9C2A36] hover:bg-[#7a212a] text-white px-10 py-5 rounded-lg font-black uppercase text-[20px] transition-all shadow-[0_10px_20px_rgba(156,42,54,0.4)] hover:-translate-y-1 text-center">
-                  Faça parte agora
+              {/* CTAs */}
+              <div className="flex flex-col gap-4 mt-4">
+                <a 
+                  href="#planos" 
+                  className="w-full lg:w-auto inline-block bg-[#008C3A] text-white px-10 py-5 rounded-lg font-bold text-[16px] lg:text-[18px] text-center transition-all border-2 border-[#008C3A] hover:bg-white hover:text-[#008C3A] hover:-translate-y-1 shadow-lg"
+                  style={{ fontFamily: 'Montserrat, sans-serif' }}
+                >
+                  Quero meu plano Arquiba
                 </a>
-                <a href="#info" className="bg-transparent border-2 border-white hover:bg-white hover:text-[#006437] text-white px-10 py-5 rounded-lg font-black uppercase text-[20px] transition-all text-center">
-                  Saiba mais
+                <a 
+                  href="#info" 
+                  className="text-[#AA1A2F] font-bold text-[14px] lg:text-[16px] underline underline-offset-4 hover:opacity-80 transition-opacity"
+                  style={{ fontFamily: 'Montserrat, sans-serif' }}
+                >
+                  Ver vantagens completas
                 </a>
+              </div>
+
+              {/* INDICADORES DE CONFIANÇA */}
+              <div className="flex flex-wrap gap-6 pt-6 border-t border-gray-100">
+                <div className="flex flex-col">
+                  <span className="text-[#008C3A] font-bold text-xl">+ de 65k</span>
+                  <span className="text-[12px] uppercase text-gray-500 font-semibold">sócios felizes</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-[#008C3A] font-bold text-xl">Exclusivo</span>
+                  <span className="text-[12px] uppercase text-gray-500 font-semibold">Descontos reais</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-[#008C3A] font-bold text-xl">100% Digital</span>
+                  <span className="text-[12px] uppercase text-gray-500 font-semibold">Sem burocracia</span>
+                </div>
               </div>
             </div>
 
-            {/* RIGHT CONTENT - CARD MOCKUP */}
-            <div className="lg:col-span-5 hidden lg:flex justify-center relative">
-              <div className="relative">
-                <div className="absolute -inset-10 bg-[#9C2A36] opacity-30 blur-[100px] rounded-full"></div>
+            {/* RIGHT CONTENT (HERO IMAGE) */}
+            <div className="lg:col-span-5 relative mt-8 lg:mt-0">
+              {/* OVERLAY/DECORATION */}
+              <div className="absolute -inset-4 bg-gradient-to-tr from-[#008C3A]/10 via-transparent to-[#AA1A2F]/10 rounded-full blur-3xl z-0"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 border-r-4 border-t-4 border-[#008C3A]/20 rounded-tr-3xl z-0"></div>
+              <div className="absolute bottom-0 left-0 w-32 h-32 border-l-4 border-b-4 border-[#AA1A2F]/20 rounded-bl-3xl z-0"></div>
+              
+              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl transform lg:rotate-2 hover:rotate-0 transition-transform duration-500">
                 <img 
-                  src="https://nense.com.br/assets/img/planos/arquiba-60/card-arquiba-60.png" 
-                  alt="Cartão Sócio Futebol Arquiba" 
-                  className="relative z-10 w-[480px] drop-shadow-[0_50px_50px_rgba(0,0,0,0.6)] transform rotate-[-6deg] hover:rotate-0 transition-transform duration-700 ease-out"
+                  src="https://nense.com.br/assets/img/planos/arquiba-60/bg-topo.jpg" 
+                  alt="Torcida vibrando no estádio – Sócio Arquiba" 
+                  className="w-full h-[400px] lg:h-[550px] object-cover"
                 />
-                <div className="absolute -bottom-6 -right-6 z-20 bg-white p-4 rounded-xl shadow-2xl transform rotate-3 hidden xl:block">
-                  <p className="text-[#006437] font-black text-[12px] uppercase leading-tight">Sua cadeira no<br/>Maraca te espera!</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute bottom-6 left-6 text-white">
+                  <p className="font-bold text-lg italic">#SejaSócio</p>
                 </div>
               </div>
             </div>
 
           </div>
-        </div>
-
-        {/* BOTTOM WAVE DECORATION */}
-        <div className="absolute bottom-0 left-0 w-full leading-[0] z-20">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-[70px] fill-white">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C58.47,105.1,123.61,105.54,182.21,95.83,240.81,86.12,263.39,67.23,321.39,56.44Z"></path>
-          </svg>
         </div>
       </section>
 
       {/* PLANOS GRID SECTION */}
-      <section id="planos" className="bg-[#FFFFFF] py-20">
-        <div className="max-w-[1440px] mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-[32px] md:text-[48px] font-black text-[#212529] uppercase italic leading-none">
-              ESCOLHA O SEU <span className="text-[#006437]">PLANO</span>
-            </h2>
-            <div className="w-24 h-1.5 bg-[#9C2A36] mx-auto mt-4"></div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-stretch">
-            
-            {/* PLANO ARQUIBA 100% */}
-            <div className="bg-[#FFFFFF] border-2 border-[#006437] rounded-xl overflow-hidden flex flex-col shadow-lg hover:shadow-2xl transition-all group relative">
-              <div className="p-5 bg-[#F8F9FA] border-b border-[#DEE2E6]">
-                <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Arquiba 100%</h3>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-[12px] font-bold text-[#6C757D]">R$</span>
-                  <span className="text-[32px] font-black text-[#006437]">95</span>
-                  <span className="text-[12px] font-medium text-[#6C757D]">/mês</span>
-                </div>
-              </div>
-              <div className="p-5 flex-grow">
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
-                    <span className="text-[#006437] font-bold">✓</span>
-                    <span><strong>100% desc.</strong> em arquibancada</span>
-                  </li>
-                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
-                    <span className="text-[#006437] font-bold">✓</span>
-                    <span><strong>Prioridade 1</strong> no check-in</span>
-                  </li>
-                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
-                    <span className="text-[#006437] font-bold">✓</span>
-                    <span>Até 3 convidados</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="p-5 pt-0">
-                <button className="w-full bg-[#006437] text-white py-3 rounded-lg font-bold uppercase text-[12px] hover:bg-[#004d2a] transition-colors">
-                  Assinar Agora
-                </button>
-              </div>
-            </div>
-
-            {/* PLANO ARQUIBA 60% */}
-            <div className="bg-[#FFFFFF] border border-[#DEE2E6] rounded-xl overflow-hidden flex flex-col shadow-sm hover:border-[#006437] transition-all group">
-              <div className="p-5 bg-[#F8F9FA] border-b border-[#DEE2E6]">
-                <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Arquiba 60%</h3>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-[12px] font-bold text-[#6C757D]">R$</span>
-                  <span className="text-[32px] font-black text-[#006437]">55</span>
-                  <span className="text-[12px] font-medium text-[#6C757D]">/mês</span>
-                </div>
-              </div>
-              <div className="p-5 flex-grow">
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
-                    <span className="text-[#006437] font-bold">✓</span>
-                    <span><strong>60% desc.</strong> em arquibancada</span>
-                  </li>
-                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
-                    <span className="text-[#006437] font-bold">✓</span>
-                    <span><strong>Prioridade 2</strong> no check-in</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="p-5 pt-0">
-                <button className="w-full bg-[#006437] text-white py-3 rounded-lg font-bold uppercase text-[12px] hover:bg-[#004d2a] transition-colors">
-                  Assinar Agora
-                </button>
-              </div>
-            </div>
-
-            {/* PLANO GUERREIRO */}
-            <div className="bg-[#FFFFFF] border border-[#DEE2E6] rounded-xl overflow-hidden flex flex-col shadow-sm hover:border-[#006437] transition-all group">
-              <div className="p-5 bg-[#F8F9FA] border-b border-[#DEE2E6]">
-                <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Guerreiro</h3>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-[12px] font-bold text-[#6C757D]">R$</span>
-                  <span className="text-[32px] font-black text-[#006437]">25</span>
-                  <span className="text-[12px] font-medium text-[#6C757D]">/mês</span>
-                </div>
-              </div>
-              <div className="p-5 flex-grow">
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
-                    <span className="text-[#006437] font-bold">✓</span>
-                    <span><strong>20% desc.</strong> em arquibancada</span>
-                  </li>
-                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
-                    <span className="text-[#006437] font-bold">✓</span>
-                    <span><strong>Prioridade 3</strong> no check-in</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="p-5 pt-0">
-                <button className="w-full bg-[#006437] text-white py-3 rounded-lg font-bold uppercase text-[12px] hover:bg-[#004d2a] transition-colors">
-                  Assinar Agora
-                </button>
-              </div>
-            </div>
-
-            {/* PLANO MARACA+ */}
-            <div className="bg-[#FFFFFF] border-2 border-[#9C2A36] rounded-xl overflow-hidden flex flex-col shadow-xl relative z-10 transform lg:scale-105">
-              <div className="bg-[#9C2A36] text-white text-center py-1.5 text-[10px] font-bold uppercase tracking-widest">
-                Plano Premium
-              </div>
-              <div className="p-5 bg-[#FFF5F6] border-b border-[#DEE2E6]">
-                <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Maraca +</h3>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-[12px] font-bold text-[#6C757D]">R$</span>
-                  <span className="text-[32px] font-black text-[#9C2A36]">175</span>
-                  <span className="text-[12px] font-medium text-[#6C757D]">/mês</span>
-                </div>
-              </div>
-              <div className="p-5 flex-grow">
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2 text-[13px] text-[#212529] font-bold">
-                    <span className="text-[#9C2A36]">★</span>
-                    <span>Check-in em qualquer setor</span>
-                  </li>
-                  <li className="flex items-start gap-2 text-[13px] text-[#212529] font-bold">
-                    <span className="text-[#9C2A36]">★</span>
-                    <span>Prioridade Máxima</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="p-5 pt-0">
-                <button className="w-full bg-[#9C2A36] text-white py-3 rounded-lg font-bold uppercase text-[12px] hover:bg-[#7a212a] transition-colors">
-                  Assinar Agora
-                </button>
-              </div>
-            </div>
-
-            {/* PLANO SUB-12 */}
-            <div className="bg-[#FFFFFF] border border-[#DEE2E6] rounded-xl overflow-hidden flex flex-col shadow-sm hover:border-[#9C2A36] transition-all group">
-              <div className="p-5 bg-[#F8F9FA] border-b border-[#DEE2E6]">
-                <h3 className="text-[18px] font-black text-[#212529] uppercase italic mb-1">Sub-12</h3>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-[12px] font-bold text-[#6C757D]">R$</span>
-                  <span className="text-[32px] font-black text-[#9C2A36]">15</span>
-                  <span className="text-[12px] font-medium text-[#6C757D]">/mês</span>
-                </div>
-              </div>
-              <div className="p-5 flex-grow">
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
-                    <span className="text-[#9C2A36] font-bold">✓</span>
-                    <span>Até 12 anos de idade</span>
-                  </li>
-                  <li className="flex items-start gap-2 text-[13px] text-[#495057]">
-                    <span className="text-[#9C2A36] font-bold">✓</span>
-                    <span>Check-in gratuito</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="p-5 pt-0">
-                <button className="w-full bg-[#9C2A36] text-white py-3 rounded-lg font-bold uppercase text-[12px] hover:bg-[#7a212a] transition-colors">
-                  Assinar Agora
-                </button>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* INFO SECTION */}
-      <section id="info" className="bg-[#F8F9FA] py-20 border-t border-gray-100">
+      <section id="planos" className="bg-[#F8F9FA] py-20">
         <div className="max-w-[1200px] mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-[32px] font-black text-[#212529] uppercase italic mb-6 leading-tight">
-                POR QUE SER <span className="text-[#9C2A36]">SÓCIO FUTEBOL?</span>
-              </h2>
-              <div className="space-y-6">
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md flex-shrink-0">
-                    <span className="text-[#006437] font-bold text-lg">01</span>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-[#212529] uppercase text-[16px]">Prioridade Máxima</h4>
-                    <p className="text-[#6C757D] text-[14px]">Garanta seu lugar no Maracanã antes de todo mundo nos jogos decisivos.</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md flex-shrink-0">
-                    <span className="text-[#006437] font-bold text-lg">02</span>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-[#212529] uppercase text-[16px]">Economia Real</h4>
-                    <p className="text-[#6C757D] text-[14px]">Com os descontos nos ingressos, o plano se paga em apenas um ou dois jogos no mês.</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md flex-shrink-0">
-                    <span className="text-[#006437] font-bold text-lg">03</span>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-[#212529] uppercase text-[16px]">Experiências</h4>
-                    <p className="text-[#6C757D] text-[14px]">Participe de sorteios para visitas ao CT, Match Day e outros eventos exclusivos.</p>
-                  </div>
-                </div>
-              </div>
+          <div className="text-center mb-16">
+            <h2 className="text-[32px] md:text-[40px] font-bold text-[#1C1C1C] uppercase italic" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              Escolha o seu <span className="text-[#008C3A]">Plano</span>
+            </h2>
+            <div className="w-20 h-1.5 bg-[#AA1A2F] mx-auto mt-4"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* ARQUIBA 100% */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border-2 border-[#008C3A] flex flex-col">
+              <h3 className="text-2xl font-bold mb-2">Arquiba 100%</h3>
+              <div className="text-4xl font-black text-[#008C3A] mb-6">R$ 95<span className="text-sm text-gray-500">/mês</span></div>
+              <ul className="space-y-4 mb-8 flex-grow">
+                <li className="flex items-center gap-2">✅ 100% de desconto no ingresso</li>
+                <li className="flex items-center gap-2">✅ Prioridade 1 no Check-in</li>
+                <li className="flex items-center gap-2">✅ Até 3 convidados</li>
+              </ul>
+              <button className="w-full bg-[#008C3A] text-white py-4 rounded-xl font-bold hover:bg-[#006b2c] transition-colors">ASSINAR AGORA</button>
             </div>
-            <div className="relative">
-              <img 
-                src="https://nense.com.br/assets/img/bg-home-socio.png" 
-                alt="Torcida Fluminense" 
-                className="rounded-2xl shadow-2xl w-full object-cover"
-              />
+
+            {/* ARQUIBA 60% */}
+            <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-200 flex flex-col">
+              <h3 className="text-2xl font-bold mb-2">Arquiba 60%</h3>
+              <div className="text-4xl font-black text-[#008C3A] mb-6">R$ 55<span className="text-sm text-gray-500">/mês</span></div>
+              <ul className="space-y-4 mb-8 flex-grow">
+                <li className="flex items-center gap-2">✅ 60% de desconto no ingresso</li>
+                <li className="flex items-center gap-2">✅ Prioridade 2 no Check-in</li>
+              </ul>
+              <button className="w-full bg-[#008C3A] text-white py-4 rounded-xl font-bold hover:bg-[#006b2c] transition-colors">ASSINAR AGORA</button>
+            </div>
+
+            {/* GUERREIRO */}
+            <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-200 flex flex-col">
+              <h3 className="text-2xl font-bold mb-2">Guerreiro</h3>
+              <div className="text-4xl font-black text-[#008C3A] mb-6">R$ 25<span className="text-sm text-gray-500">/mês</span></div>
+              <ul className="space-y-4 mb-8 flex-grow">
+                <li className="flex items-center gap-2">✅ 20% de desconto no ingresso</li>
+                <li className="flex items-center gap-2">✅ Prioridade 3 no Check-in</li>
+              </ul>
+              <button className="w-full bg-[#008C3A] text-white py-4 rounded-xl font-bold hover:bg-[#006b2c] transition-colors">ASSINAR AGORA</button>
             </div>
           </div>
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#212529] text-white py-16">
-        <div className="max-w-[1200px] mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-gray-700 pb-12">
-            <div className="col-span-1 md:col-span-1">
-              <img 
-                src="https://nense.com.br/assets/img/logo-socio-futebol-white.png" 
-                alt="Sócio Futebol" 
-                className="h-12 mb-6"
-              />
-            </div>
-            <div>
-              <h5 className="font-bold uppercase text-[14px] mb-6 text-[#9C2A36]">Institucional</h5>
-              <ul className="space-y-3 text-[14px] text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">O Programa</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Transparência</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Termos e Condições</a></li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="font-bold uppercase text-[14px] mb-6 text-[#006437]">Ajuda</h5>
-              <ul className="space-y-3 text-[14px] text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Dúvidas Frequentes</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Fale Conosco</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Chat Online</a></li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="font-bold uppercase text-[14px] mb-6">Redes Sociais</h5>
-              <div className="flex gap-4">
-                <div className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#006437] transition-all cursor-pointer">f</div>
-                <div className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#006437] transition-all cursor-pointer">t</div>
-                <div className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#006437] transition-all cursor-pointer">i</div>
-              </div>
-            </div>
-          </div>
-          <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[12px] text-gray-500 font-medium">
-            <p>© 2024 FLUMINENSE FOOTBALL CLUB. TODOS OS DIREITOS RESERVADOS.</p>
-            <p>DESENVOLVIDO POR FFC TECH</p>
-          </div>
+      <footer className="bg-[#1C1C1C] text-white py-12">
+        <div className="max-w-[1200px] mx-auto px-4 text-center">
+          <img 
+            src="https://nense.com.br/assets/img/logo-socio-futebol-white.png" 
+            alt="Sócio Futebol" 
+            className="h-10 mx-auto mb-8"
+          />
+          <p className="text-gray-400 text-sm">© 2024 FLUMINENSE FOOTBALL CLUB. TODOS OS DIREITOS RESERVADOS.</p>
         </div>
       </footer>
     </main>
