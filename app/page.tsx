@@ -10,32 +10,34 @@ export default function Home() {
 
       {/* HEADER / NAVIGATION */}
       <nav className="border-b border-[#393939] bg-[#171717] sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+          {/* LADO ESQUERDO: VOLTAR E LOGO */}
+          <div className="flex items-center gap-4 md:gap-8 shrink-0">
             <a href="/" className="flex items-center gap-2 text-sm font-bold hover:text-[#185347] transition-colors">
               <span>←</span> VOLTAR
             </a>
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 bg-[#185347] rounded-full flex items-center justify-center font-bold text-xl border border-[#68121f]">FFC</div>
-              <span className="text-xl font-bold tracking-tighter uppercase">Sócio Futebol</span>
+              <span className="text-xl font-bold tracking-tighter uppercase hidden sm:inline">Sócio Futebol</span>
             </div>
           </div>
 
-          {/* CONTADOR DE SÓCIOS ALINHADO NO HEADER */}
-          <div className="hidden lg:flex items-center gap-6 bg-[#1f1f1f] px-6 py-2 border border-white/10">
-            <div className="flex flex-col leading-none">
-              <span className="text-[#ffffff] font-black text-xl">65.432</span>
-              <span className="text-[10px] tracking-[0.2em] uppercase opacity-60">Sócios Ativos</span>
+          {/* LADO DIREITO: CONTADOR + LOGIN + SEJA SÓCIO */}
+          <div className="flex items-center gap-4 md:gap-8">
+            {/* CONTADOR DE SÓCIOS INTEGRADO */}
+            <div className="hidden md:flex items-center gap-4 bg-[#1f1f1f] px-4 py-2 border border-white/10">
+              <div className="flex flex-col leading-none">
+                <span className="text-[#ffffff] font-black text-lg">65.432</span>
+                <span className="text-[9px] tracking-[0.1em] uppercase opacity-60">Sócios Ativos</span>
+              </div>
+              <div className="h-6 w-[1px] bg-white/20"></div>
+              <span className="text-[10px] tracking-[0.2em] font-bold uppercase text-[#185347] hidden lg:block">Somos Fluminense</span>
             </div>
-            <div className="h-8 w-[1px] bg-white/20"></div>
-            <span className="text-[11px] tracking-[0.3em] font-bold uppercase text-[#185347]">Somos Fluminense</span>
-          </div>
-          
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-6 font-bold text-sm tracking-widest">
+            
+            <div className="flex items-center gap-4 md:gap-6 font-bold text-sm tracking-widest">
               <a href="#" className="hover:text-[#185347] transition-colors uppercase">LOGIN</a>
-              <span className="text-[#393939]">|</span>
-              <a href="#" className="bg-[#68121f] px-4 py-2 hover:bg-[#8a1829] transition-colors uppercase">SEJA SÓCIO</a>
+              <span className="text-[#393939] hidden sm:inline">|</span>
+              <a href="#" className="bg-[#68121f] px-4 py-2 hover:bg-[#8a1829] transition-colors uppercase whitespace-nowrap">SEJA SÓCIO</a>
             </div>
           </div>
         </div>
