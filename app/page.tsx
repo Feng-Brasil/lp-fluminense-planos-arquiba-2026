@@ -19,6 +19,7 @@ export default function Home() {
             <a href="#" className="text-[16px] font-bold text-[#FFFFFF] uppercase hover:opacity-80 transition-opacity" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
               Login
             </a>
+            <span className="text-[#FFFFFF] opacity-50">|</span>
             <a href="#" className="text-[16px] font-bold text-[#FFFFFF] uppercase hover:opacity-80 transition-opacity" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
               Minha Conta
             </a>
@@ -40,9 +41,11 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 max-w-[1200px] mx-auto px-4 pt-20 flex flex-col items-center text-center">
-          <span className="text-[#FFFFFF] text-[14px] lg:text-[18px] font-bold uppercase tracking-[3px] mb-4" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
-            1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
-          </span>
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 px-6 py-2 rounded-full mb-6">
+            <span className="text-[#FFFFFF] text-[14px] lg:text-[18px] font-bold uppercase tracking-[3px]" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
+              1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
+            </span>
+          </div>
           
           <h1 className="text-[56px] lg:text-[90px] font-black leading-[0.9] text-[#FFFFFF] mb-6 italic" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
             O FLU SE VIVE JUNTO!
