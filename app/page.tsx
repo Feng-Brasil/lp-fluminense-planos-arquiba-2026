@@ -41,34 +41,41 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 max-w-[1200px] mx-auto px-4 pt-20 flex flex-col items-center text-center">
+          {/* Box acima do título */}
           <div className="bg-white/10 backdrop-blur-md border border-white/20 px-6 py-2 rounded-full mb-6">
             <span className="text-[#FFFFFF] text-[14px] lg:text-[18px] font-bold uppercase tracking-[3px]" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
               1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
             </span>
           </div>
           
+          {/* Título principal */}
           <h1 className="text-[56px] lg:text-[90px] font-black leading-[0.9] text-[#FFFFFF] mb-6 italic" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
             O FLU SE VIVE JUNTO!
           </h1>
           
+          {/* Subtítulo */}
           <p className="text-[20px] lg:text-[26px] font-medium text-[#FFFFFF] mb-12 max-w-2xl opacity-90">
             Convide, economize e sigam juntos na arquibancada.
           </p>
 
           {/* Lista de benefícios em boxes na horizontal */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 w-full mb-12">
+            {/* Benefício 1: Ingresso */}
             <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4 text-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>
               <p className="text-white text-[14px] font-bold uppercase leading-tight" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Mais prioridade na compra de ingressos</p>
             </div>
+            {/* Benefício 2: Cifrão */}
             <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4 text-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
               <p className="text-white text-[14px] font-bold uppercase leading-tight" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Descontos em ingressos para convidados</p>
             </div>
+            {/* Benefício 3: Silhueta */}
             <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4 text-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               <p className="text-white text-[14px] font-bold uppercase leading-tight" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Viva o jogo com quem faz parte da sua história</p>
             </div>
+            {/* Benefício 4: Fogo */}
             <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4 text-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
               <p className="text-white text-[14px] font-bold uppercase leading-tight" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>VAMOS TODOS JUNTOS RUMO À GLÓRIA</p>
