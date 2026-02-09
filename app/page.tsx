@@ -15,9 +15,10 @@ export default function Home() {
             </a>
           </div>
           
-          <div className="flex items-center gap-8">
-            <a href="#" className="text-[16px] font-bold text-[#FFFFFF] uppercase hover:opacity-80 transition-opacity" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Login</a>
-            <a href="#" className="text-[16px] font-bold text-[#FFFFFF] uppercase hover:opacity-80 transition-opacity" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Minha Conta</a>
+          <div className="flex items-center">
+            <a href="#" className="text-[16px] font-bold text-[#FFFFFF] uppercase hover:opacity-80 transition-opacity" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
+              Login | Minha Conta
+            </a>
           </div>
         </div>
       </nav>
@@ -50,20 +51,20 @@ export default function Home() {
 
           {/* Lista de benefícios em boxes na horizontal */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 w-full mb-12">
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4">
-              <span className="text-3xl text-white">🎟️</span>
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>
               <p className="text-white text-[14px] font-bold uppercase leading-tight" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Mais prioridade na compra de ingressos</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4">
-              <span className="text-3xl text-white">$</span>
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
               <p className="text-white text-[14px] font-bold uppercase leading-tight" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Descontos em ingressos para convidados</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4">
-              <span className="text-3xl text-white">👥</span>
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               <p className="text-white text-[14px] font-bold uppercase leading-tight" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Viva o jogo com quem faz parte da sua história</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4">
-              <span className="text-3xl text-white">🔥</span>
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
               <p className="text-white text-[14px] font-bold uppercase leading-tight" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>VAMOS TODOS JUNTOS RUMO À GLÓRIA</p>
             </div>
           </div>
