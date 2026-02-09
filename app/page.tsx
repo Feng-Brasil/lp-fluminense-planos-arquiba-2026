@@ -15,9 +15,12 @@ export default function Home() {
             </a>
           </div>
           
-          <div className="flex items-center">
+          <div className="flex items-center gap-6">
             <a href="#" className="text-[16px] font-bold text-[#FFFFFF] uppercase hover:opacity-80 transition-opacity" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
-              Login | Minha Conta
+              Login
+            </a>
+            <a href="#" className="text-[16px] font-bold text-[#FFFFFF] uppercase hover:opacity-80 transition-opacity" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
+              Minha Conta
             </a>
           </div>
         </div>
