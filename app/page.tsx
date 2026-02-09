@@ -3,123 +3,79 @@ export default function Home() {
     <main className="min-h-screen bg-[#FFFFFF] text-[#1C1C1C] selection:bg-[#AA1A2F] selection:text-white" style={{ fontFamily: 'Balboa, sans-serif' }}>
       
       {/* HEADER / NAVIGATION */}
-      <nav className="bg-[#FFFFFF] border-b border-gray-100 sticky top-0 z-50">
-        <div className="max-w-[1200px] mx-auto px-4 h-20 flex items-center justify-between">
+      <nav className="absolute top-0 left-0 w-full z-50 bg-transparent">
+        <div className="max-w-[1400px] mx-auto px-6 h-24 flex items-center justify-between">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
               <img 
                 src="https://nense.com.br/assets/img/logo-socio-futebol.png" 
                 alt="Sócio Futebol" 
-                className="h-12 w-auto"
+                className="h-14 w-auto brightness-0 invert"
               />
             </a>
           </div>
-
-          <div className="hidden lg:flex items-center">
-            <div className="bg-[#008C3A] text-white px-8 py-2.5 rounded-full text-[16px] font-bold uppercase tracking-wider shadow-md" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
-              SOMOS 65.432 SÓCIOS DO FLU
-            </div>
-          </div>
           
-          <div className="flex items-center gap-3">
-            <a href="#" className="text-[14px] font-bold text-[#1C1C1C] px-4 uppercase" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Login</a>
-            <a href="#planos" className="bg-[#008C3A] text-white px-6 py-3 text-[14px] font-bold rounded-md hover:bg-[#006b2c] transition-all uppercase" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
-              Seja Sócio
-            </a>
+          <div className="flex items-center gap-8">
+            <a href="#" className="text-[16px] font-bold text-[#FFFFFF] uppercase hover:opacity-80 transition-opacity" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Login</a>
+            <a href="#" className="text-[16px] font-bold text-[#FFFFFF] uppercase hover:opacity-80 transition-opacity" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Minha Conta</a>
           </div>
         </div>
       </nav>
 
-      {/* HERO SECTION - PRIMEIRO SCROLL */}
-      <section className="relative w-full bg-[#FFFFFF] overflow-hidden">
-        <div className="max-w-[1200px] mx-auto px-4 py-[64px] lg:py-[96px]">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-[24px] items-center">
-            
-            {/* LEFT CONTENT (TEXTO PRINCIPAL) */}
-            <div className="lg:col-span-7 flex flex-col gap-[24px]">
-              <h1 className="text-[36px] lg:text-[48px] font-bold leading-[1.2] text-[#1C1C1C]" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
-                Seja Sócio Arquiba – Sócio Futebol do Fluminense
-              </h1>
-              
-              <h2 className="text-[24px] lg:text-[28px] font-semibold leading-[1.4] text-[#1C1C1C]" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
-                Prioridade na compra de ingressos + descontos de até 100% para jogos no Maracanã
-              </h2>
-              
-              <p className="text-[16px] lg:text-[18px] font-normal leading-[1.6] text-[#1C1C1C] max-w-xl">
-                Contrate agora seu plano Arquiba e garanta check-in com benefícios exclusivos, além de descontos em ingressos e produtos oficiais.
-              </p>
+      {/* HERO SECTION */}
+      <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image Full Width */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://nense.com.br/assets/img/planos/arquiba-60/bg-topo.jpg" 
+            alt="Torcida do Fluminense" 
+            className="w-full h-full object-cover"
+          />
+          {/* Overlay escuro em degradê */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-[#1C1C1C]"></div>
+        </div>
 
-              {/* BENEFÍCIOS RÁPIDOS */}
-              <div className="flex flex-col gap-[16px]">
-                <div className="flex items-center gap-3 text-[18px] lg:text-[20px] font-semibold leading-[1.5]" style={{ color: '#1C1C1C', fontFamily: 'Balboa Bold, sans-serif' }}>
-                  <span className="text-[#008C3A]">🔥</span>
-                  <span>Check-in com desconto de até 100%</span>
-                </div>
-                <div className="flex items-center gap-3 text-[18px] lg:text-[20px] font-semibold leading-[1.5]" style={{ color: '#1C1C1C', fontFamily: 'Balboa Bold, sans-serif' }}>
-                  <span className="text-[#008C3A]">🎟️</span>
-                  <span>Prioridade na compra de ingressos</span>
-                </div>
-                <div className="flex items-center gap-3 text-[18px] lg:text-[20px] font-semibold leading-[1.5]" style={{ color: '#1C1C1C', fontFamily: 'Balboa Bold, sans-serif' }}>
-                  <span className="text-[#008C3A]">👥</span>
-                  <span>Leve convidados com vantagens</span>
-                </div>
-              </div>
-              
-              {/* CTAs */}
-              <div className="flex flex-col gap-4 mt-4">
-                <a 
-                  href="#planos" 
-                  className="w-full lg:w-auto inline-block bg-[#008C3A] text-white px-10 py-5 rounded-lg font-bold text-[16px] lg:text-[18px] text-center transition-all border-2 border-[#008C3A] hover:bg-white hover:text-[#008C3A] hover:-translate-y-1 shadow-lg"
-                  style={{ fontFamily: 'Balboa Bold, sans-serif' }}
-                >
-                  Quero meu plano Arquiba
-                </a>
-                <a 
-                  href="#info" 
-                  className="text-[#AA1A2F] font-bold text-[14px] lg:text-[16px] underline underline-offset-4 hover:opacity-80 transition-opacity"
-                  style={{ fontFamily: 'Balboa Bold, sans-serif' }}
-                >
-                  Ver vantagens completas
-                </a>
-              </div>
+        <div className="relative z-10 max-w-[1200px] mx-auto px-4 pt-20 flex flex-col items-center text-center">
+          <span className="text-[#FFFFFF] text-[14px] lg:text-[18px] font-bold uppercase tracking-[3px] mb-4" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
+            1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
+          </span>
+          
+          <h1 className="text-[56px] lg:text-[90px] font-black leading-[0.9] text-[#FFFFFF] mb-6 italic" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>
+            O FLU SE VIVE JUNTO!
+          </h1>
+          
+          <p className="text-[20px] lg:text-[26px] font-medium text-[#FFFFFF] mb-12 max-w-2xl opacity-90">
+            Convide, economize e sigam juntos na arquibancada.
+          </p>
 
-              {/* INDICADORES DE CONFIANÇA */}
-              <div className="flex flex-wrap gap-6 pt-6 border-t border-gray-100">
-                <div className="flex flex-col">
-                  <span className="text-[#008C3A] font-bold text-xl" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>+ de 65k</span>
-                  <span className="text-[12px] uppercase text-gray-500 font-semibold" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>sócios felizes</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[#008C3A] font-bold text-xl" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Exclusivo</span>
-                  <span className="text-[12px] uppercase text-gray-500 font-semibold" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Descontos reais</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[#008C3A] font-bold text-xl" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>100% Digital</span>
-                  <span className="text-[12px] uppercase text-gray-500 font-semibold" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Sem burocracia</span>
-                </div>
-              </div>
+          {/* Lista de benefícios em boxes na horizontal */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 w-full mb-12">
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4">
+              <span className="text-3xl text-white">🎟️</span>
+              <p className="text-white text-[14px] font-bold uppercase leading-tight" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Mais prioridade na compra de ingressos</p>
             </div>
-
-            {/* RIGHT CONTENT (HERO IMAGE) */}
-            <div className="lg:col-span-5 relative mt-8 lg:mt-0">
-              <div className="absolute -inset-4 bg-gradient-to-tr from-[#008C3A]/10 via-transparent to-[#AA1A2F]/10 rounded-full blur-3xl z-0"></div>
-              <div className="absolute top-0 right-0 w-32 h-32 border-r-4 border-t-4 border-[#008C3A]/20 rounded-tr-3xl z-0"></div>
-              <div className="absolute bottom-0 left-0 w-32 h-32 border-l-4 border-b-4 border-[#AA1A2F]/20 rounded-bl-3xl z-0"></div>
-              
-              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl transform lg:rotate-2 hover:rotate-0 transition-transform duration-500">
-                <img 
-                  src="https://nense.com.br/assets/img/planos/arquiba-60/bg-topo.jpg" 
-                  alt="Torcida vibrando no estádio – Sócio Arquiba" 
-                  className="w-full h-[400px] lg:h-[550px] object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                <div className="absolute bottom-6 left-6 text-white">
-                  <p className="font-bold text-lg italic" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>#SejaSócio</p>
-                </div>
-              </div>
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4">
+              <span className="text-3xl text-white">$</span>
+              <p className="text-white text-[14px] font-bold uppercase leading-tight" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Descontos em ingressos para convidados</p>
             </div>
-
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4">
+              <span className="text-3xl text-white">👥</span>
+              <p className="text-white text-[14px] font-bold uppercase leading-tight" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>Viva o jogo com quem faz parte da sua história</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl flex flex-col items-center gap-4">
+              <span className="text-3xl text-white">🔥</span>
+              <p className="text-white text-[14px] font-bold uppercase leading-tight" style={{ fontFamily: 'Balboa Bold, sans-serif' }}>VAMOS TODOS JUNTOS RUMO À GLÓRIA</p>
+            </div>
           </div>
+
+          {/* Botão principal (CTA) */}
+          <a 
+            href="#planos" 
+            className="bg-[#008C3A] text-white px-12 py-6 rounded-full font-black text-[20px] lg:text-[24px] uppercase transition-all hover:scale-105 hover:bg-[#006b2c] shadow-[0_0_30px_rgba(0,140,58,0.4)]"
+            style={{ fontFamily: 'Balboa Bold, sans-serif' }}
+          >
+            Adicionar convidado agora
+          </a>
         </div>
       </section>
 
